@@ -1176,7 +1176,7 @@ function exportPDF() {
 // UTILITIES
 // ============================================================
 function getUnique(arr, key) {
-  return [...new Set(arr.map(item => item[key]).filter(Boolean))];
+  return [...new Set(arr.map(item => item[key]).filter(v => v != null))];
 }
 
 // ============================================================
