@@ -73,7 +73,7 @@ The app expects a JSON array where each object represents one product.
 
 ## Usage
 
-1. Open the site (or `moodboard.html` directly in a browser)
+1. Open the site (or `index.html` directly in a browser)
 2. Drag your JSON file onto the upload zone, or click "browse file"
 3. Edit the board title, subtitle, client name, and date in the sidebar
 4. Select a layout (2-column, 3-column, or editorial)
@@ -81,19 +81,6 @@ The app expects a JSON array where each object represents one product.
 6. Use the category and tier filters to show or hide specific groups
 7. Optionally upload a header image (displayed as a full-width banner)
 8. Click **Export PDF** or **Export PNG** to download
-
----
-
-## Hosting
-
-The site is a single file (`moodboard.html`) hosted on GitHub Pages. To deploy your own copy:
-
-1. Fork this repository
-2. Go to **Settings > Pages**
-3. Set source to the `main` branch
-4. Your site will be available at `https://<your-username>.github.io/moodboard-studio`
-
-GitHub Pages redeploys automatically within ~30 seconds of a new commit.
 
 ---
 
@@ -107,4 +94,4 @@ GitHub Pages redeploys automatically within ~30 seconds of a new commit.
 
 ---
 
-*Built for Katia — interior architect.*
+*Built for Katia — Part 1 Architectural Assistant. :-)*
