@@ -1,0 +1,702 @@
+[
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Sofa Modulable · Pierre Augustin Rose",
+    "url": "https://pierreaugustinrose.com/products/module-droit",
+    "image_url": "http://pierreaugustinrose.com/cdn/shop/files/sku_SFMOD105_default_image_1.jpg?v=1751904266"
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Camaleonda Sofa · Mario Bellini for B&B Italia",
+    "url": "https://www.bebitalia.com/en-us/en-us-camaleonda-divani.html",
+    "image_url": ""
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Piaf Bézier Sofa · ddc",
+    "url": "https://ddcnyc.com/collections/sofas/products/piaf-bezier-sofa",
+    "image_url": "https://www.ddcnyc.com/wp-content/uploads/2021/10/Shop_page_006.jpg"
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Dylan Small Sofa · ddc",
+    "url": "https://ddcnyc.com/collections/sofas/products/dylan-small-sofa",
+    "image_url": "https://www.ddcnyc.com/wp-content/uploads/2021/10/Shop_page_006.jpg"
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Cleo Sofa · Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/cleo-sofa/",
+    "image_url": ""
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Iliade Curved Sofa · Vincent Mazenauer for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/iliade-curved-sofa-by-vincent-mazenauer/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/03/STUDIOTWENTYSEVEN_Iliade-Curved-Sofa_Vincent-Mazenauer.webp"
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Ampleur Sofa · Maxime Boutillier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/ampleur-sofa-by-maxime-boutillier/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Almpleur-Sofa_Maxime-Boutillier.webp"
+  },
+  {
+    "category": "SOFAS",
+    "tier": "",
+    "name": "Verneuil Modular Sofa · Charles Kalpakian for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/verneuil-modular-sofa-by-charles-kalpakian/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_Verneuil-Sofa_David-Haymann.jpg"
+  },
+  {
+    "category": "BEDS",
+    "tier": "",
+    "name": "Peg Bed · Cappellini",
+    "url": "https://www.miliashop.com/en/beds/6588-peg-bed-cappellini.html",
+    "image_url": "https://www.miliashop.com/34504-large_default/peg-bed-cappellini.jpg"
+  },
+  {
+    "category": "BEDS",
+    "tier": "",
+    "name": "Coupé Bed · Poltrona Frau",
+    "url": "https://www.poltronafrau.com/gb/en/products/coupe-bed.html",
+    "image_url": "https://www.poltronafrau.com/content/dam/ld/poltronafrau/products/c/o/u/coupe-bed/14_plp/coupe-bed.jpg"
+  },
+  {
+    "category": "BEDS",
+    "tier": "",
+    "name": "Samba 3 Bed · Emmanuelle Simon for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/samba-3-bed-by-emmanuelle-simon/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-3-Bed_Emmanuelle-Simon.jpg"
+  },
+  {
+    "category": "BEDS",
+    "tier": "",
+    "name": "Samba 1 Bed · Emmanuelle Simon for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/samba-1-bed-by-emmanuelle-simon/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-1-Bed_Emmanuelle-Simon.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "TT1SE.01F Sideboard · Sattio Studio for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/tt1se-01f-sideboard-by-sattio-studio/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.01F-Sideboard_Sattio-Studio.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Bellagio Sideboard · Sauro Melchiorri for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/bellagio-sideboard-by-sauro-melchiorri/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Sideboard-Breccia-Aurora_Sauro-Melchiorri.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Chameleon Audio Cabinet · Tom Bensari for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/chameleon-audio-cabinet-by-tom-bensari/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/03/STUDIOTWENTYSEVEN_Chameleon-Audio-Cabinet_Tom-Bensari.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Pro5 Sideboard · Francesco Balzano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/pro5-sideboard-by-francesco-balzano/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2022/05/STUDIOTWENTYSEVEN_PRO5-Sideboard_Onyx_Oak_Francesco-Balzano.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Genova Credenza · Stéphane Parmentier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/genova-credenza-by-stephane-parmentier/",
+    "image_url": ""
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Bellagio Horizontal Bookcase · Sauro Melchiorri for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/bellagio-horizontal-bookcase-by-sauro-melchiorri/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Horizontal-Bookcase-Breccia-Aurora_Sauro-Melchiorri.jpg"
+  },
+  {
+    "category": "SIDEBOARDS, CREDENZAS & STORAGE",
+    "tier": "",
+    "name": "Sideboard · Finn Juhl 1955 for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/sideboard-by-finn-juhl-1955/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Thin Black Table · Nendo for Cappellini",
+    "url": "https://www.cappellini.com/ww/en/products/thin-black-table.html",
+    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/t/h/i/thin-black-table/14_plp/thin-black-table.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Gong Coffee Table · Giulio Cappellini for Cappellini",
+    "url": "https://www.cappellini.com/ww/en/products/gong.html",
+    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/g/o/n/gong/14_plp/gong.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Saarinen Side Table Round · Eero Saarinen for Design Within Reach",
+    "url": "https://www.dwr.com/furniture-tables/saarinen-side-table-round/100113.html",
+    "image_url": "https://images.hermanmiller.group/m/ac3fdf46d14de46c/W-HM_5667_10004690_camel_walnut_v1_002.png?auto=format&mediaId=A6ADCF44-FC26-40FC-B646C5DCDE9164F3&w=1200&rect=.0557%2C.4113%2C.9442%2C.3568"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Fronzoni 64 Chair · AG Fronzoni for Cappellini",
+    "url": "https://www.cappellini.com/ww/en/products/fronzoni-64.html",
+    "image_url": ""
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Tabouret Méribel · Charlotte Perriand for Cassina",
+    "url": "https://www.cassina.com/en/collection/stools/tabouret-meribel.html",
+    "image_url": ""
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Passage II Side Table · John Koga for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/passage-ii/",
+    "image_url": ""
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Catalpa Side Table · Chris Lehrecke for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/catalpa-side-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_CL-Catalpa-M.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Skye Tables · Chris Lehrecke for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/skye-tables/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/06/medium_cl_furn_m_135.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Embedded Side Table · Eric Schmitt for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/embedded/",
+    "image_url": ""
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Cabega Side Table Tan · John Wigmore for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/cabega/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/Cabega-1.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Mycelia 03 Table · Sébastien Léon for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/mycelia-03/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+  },
+  {
+    "category": "SIDE TABLES",
+    "tier": "",
+    "name": "Tavolino Travertino · Xavier Lust for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/tavolino-travertino/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/02/XL-tavolino-1-MD-1.jpg"
+  },
+  {
+    "category": "STOOLS",
+    "tier": "",
+    "name": "Mahalo Bar Stool · John Koga for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/mahalo-lounge-chair/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/John-Koga-Mahalo-Lounge-Chair.jpg"
+  },
+  {
+    "category": "STOOLS",
+    "tier": "",
+    "name": "Bonnet Bar Stool · Broberg & Ridderstråle for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/bonnet-bar-stool-by-broberg-ridderstrale/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2018/10/STUDIOTWENTYSEVEN_Bonnet-Bar-Stool_Broberg-Ridderstråle_Adea.jpg"
+  },
+  {
+    "category": "STOOLS",
+    "tier": "",
+    "name": "Balducci Stool · Adam Court for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/balducci-stool-by-adam-court/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/02/STUDIOTWENTYSEVN_Balducci-Stool_Adam-Court_Okha.jpg"
+  },
+  {
+    "category": "COFFEE TABLES",
+    "tier": "",
+    "name": "Santorini Coffee Table · Lee F. Mindel for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/santorini-coffee-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/10/SANTORINI-COFFEE-TABLE.jpg"
+  },
+  {
+    "category": "COFFEE TABLES",
+    "tier": "",
+    "name": "Celestial Coffee Table · Patrick Naggar for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/celestial-coffee-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/11/Celestial-Coffee-Table.jpg"
+  },
+  {
+    "category": "COFFEE TABLES",
+    "tier": "",
+    "name": "Table Basse Jazzy 609 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/table-basse-jazzy/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/04/Herve-Van-Der-Straeten-Table-Basse-Jazzy.jpg"
+  },
+  {
+    "category": "COFFEE TABLES",
+    "tier": "",
+    "name": "Table Basse Labyrinthe 610 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/table-basse-labyrinthe/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Table-Basse-Labyrinthe-610.jpg"
+  },
+  {
+    "category": "COFFEE TABLES",
+    "tier": "",
+    "name": "Dee Coffee Table · Paul Mathieu for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/dee-coffee-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/08/medium_PM-Dee-1-M.jpg"
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Nulla · Davide Groppi",
+    "url": "https://www.davidegroppi.com/en/nulla.html",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Bocci Lighting · Bocci",
+    "url": "https://www.bocci.com/product/28/",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Atollo Glass Table Lamp · Vico Magistretti for Oluce",
+    "url": "https://www.oluce.com/en/table-lamps/atollo.html",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Bellhop Table Lamp · Edward Barber & Jay Osgerby for Flos",
+    "url": "https://www.flos.com/en-us/products/table-lamps/bellhop",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Yuh Table Lamp · GamFratesi for Louis Poulsen",
+    "url": "https://www.louispoulsen.com/en-int/collection/table/yuh-table-lamp",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Parentesi Element · Achille Castiglioni & Pio Manzù for Flos",
+    "url": "https://www.flos.com/en-us/products/floor-lamps/parentesi",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Applique Ruban 442 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/applique-ruban-442/",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Cadenza Chandelier 3 Pendants · Ilkka Suppanen for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/cadenza/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/06/346A9422.jpg"
+  },
+  {
+    "category": "LIGHTING",
+    "tier": "",
+    "name": "Aria Chandelier 6 Arms · Paul Mathieu for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/aria/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/medium_Paul-Mathieu-Aria-Arm-Chair-4-M.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Spacy Console · Andrée Putman for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/spacy-console/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_AP_consoleNEW_M.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Console Maillon 461 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/console-maillon-461/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_hvs_furn2014_M_13.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Eden Roc Console · Stéphane Parmentier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/eden-roc-console-by-stephane-parmentier/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Eden-Roc-Console_Stephane-Parmentier.webp"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Adagio Console · Arthur Vallin for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/adagio-console-by-arthur-vallin/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Adagio-Console_Arthur-Vallin.webp"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Sculpt Console · Arthur Vallin for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/sculpt-console-by-arthur-vallin/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Sculpt-Console_Arthur-Vallin.webp"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Octave Console · Arthur Vallin for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/octave-console-by-arthur-vallin/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Octave-Console_Arthur-Vallin.webp"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Yucca Console Oak · Emma Donnersberg for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/yucca-console-oak-by-emma-donnersberg/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/10/STUDIOTWENTYSEVEN_U-Me-Console-Oak_Emma-Donnersberg.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Positano Console · Sauro Melchiorri for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/positano-console-by-sauro-melchiorri/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/01/STUDIOTWENTYSEVEN_Positano-Console_Sauro-Melchiorri.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Memento Mori Console · Boldizar Senteski for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/memento-mori-console-by-boldizar-senteski/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/01/STUDIOTWENTYSEVEN_Memento-Mori-Console_Boldizar-Senteski.jpg"
+  },
+  {
+    "category": "CONSOLES",
+    "tier": "",
+    "name": "Trani Console Large · Stéphane Parmentier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/trani-console-large-by-stephane-parmentier/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/01/SUTDIOTWENTYSEVEN_Trani-Console-Large_Stéphane-Parmentier.jpg"
+  },
+  {
+    "category": "DESKS",
+    "tier": "",
+    "name": "LS40 Desk · Luca Stefano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/ls40-desk-by-luca-stefano/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/02/STUDIOTWENTYSEVEN_LS40-Desk_Luca-Stefano.webp"
+  },
+  {
+    "category": "DESKS",
+    "tier": "",
+    "name": "LS34 Desk · Luca Stefano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/ls34-desk-by-luca-stefano/",
+    "image_url": ""
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Tokyo Bench with Cushions · Charlotte Perriand for Cassina",
+    "url": "https://www.1stdibs.com/furniture/seating/benches/charlotte-perriand-tokyo-bench-cushions-cassina/id-f_25630309/",
+    "image_url": ""
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Classic Daybed · Chris Lehrecke for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/chris-lehrecke-collection-day-bed-2/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/10/Chris-Lehrecke-Classic-Daybed.jpg"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Banquette Lazy 611 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/banquette-lazy-611/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Banquette-Lazy-611.jpg"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Rialto Bench · Lee F. Mindel for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/rialto-bench/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/07/Lee-F-Mindel-Rialto-Bench.jpg"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "QU3 Bench · Francesco Balzano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/qu3-bench-by-francesco-balzano/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/11/STUDIOTWENTYSEVEN_QU3-Bench_Francesco-Balzano.webp"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "TT1SE.06F Bench · Sattio Studio for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/tt1se-06f-bench-by-sattio-studio/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.06F-Bench_Sattio-Studio.jpg"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "LS11 Bench · Luca Stefano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/ls11-bench-by-luca-stefano/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2020/05/STUDIOTWENTYSEVEN_LS11-Bench_Luca-Stefano.jpg"
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Nomad Bench with Side Tables · Emmanuelle Simon for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/nomad-bench-with-side-tables-by-emmanuelle-simon/",
+    "image_url": ""
+  },
+  {
+    "category": "BENCHES, DAYBEDS & OTTOMANS",
+    "tier": "",
+    "name": "Nomad Daybed · Emmanuelle Simon for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/nomad-daybed-by-emmanuelle-simon/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2016/12/STUDIOTWENTYSEVEN_Nomad-Daybed_Emmanuelle-Simon.jpg"
+  },
+  {
+    "category": "SHELVING & BOOKCASES",
+    "tier": "",
+    "name": "FI03 Bookcase · Francesco Balzano for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/fi03-bookcase-by-francesco-balzano/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_FI03-Bookcase_Francesco-Balzano.jpg"
+  },
+  {
+    "category": "SHELVING & BOOKCASES",
+    "tier": "",
+    "name": "Panel System · Finn Juhl 1953 for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/panel-system-by-finn-juhl-1953/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/12/STUDIOTWENTYSEVEN_Panel-System_Finn-Juhl-1953.jpg"
+  },
+  {
+    "category": "SHELVING & BOOKCASES",
+    "tier": "",
+    "name": "Loico Shelving · Angelo Mangiarotti 1987 for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/loico-shelving-by-angelo-mangiarotti-1987/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/10/STUDIOTWENTYSEVEN_Loico-Shelving_Angelo-Mangiarotti-1987_AgapeCasa-1.jpg"
+  },
+  {
+    "category": "ARMCHAIRS",
+    "tier": "",
+    "name": "Bélier Lounge Chair · Maxime Boutillier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/belier-lounge-chair-by-maxime-boutillier/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/12/STUDIOTWENTYSEVEN_Belier-Lounge-Chair_Maxime-Boutillier.jpg"
+  },
+  {
+    "category": "ARMCHAIRS",
+    "tier": "",
+    "name": "Franck Armchair · Charles Kalpakian for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/franck-armchair-by-charles-kalpakian/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/11/STUDIOTWENTYSEVEN_Franck-Easy-Chair_Charles-Kalpakian_Haymann.jpg"
+  },
+  {
+    "category": "DINING TABLES",
+    "tier": "",
+    "name": "Bottle Table · Barber & Osgerby for Cappellini",
+    "url": "https://www.cappellini.com/ww/en/products/bottle.html",
+    "image_url": ""
+  },
+  {
+    "category": "DINING TABLES",
+    "tier": "",
+    "name": "Saarinen High Tables · Eero Saarinen for Knoll",
+    "url": "https://www.knoll.com/product/saarinen-dining-table",
+    "image_url": ""
+  },
+  {
+    "category": "DINING TABLES",
+    "tier": "",
+    "name": "Ralph Pucci One Dining Table · Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/one/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_eric-schmitt-M_Gateway.jpg"
+  },
+  {
+    "category": "DINING TABLES",
+    "tier": "",
+    "name": "Parisal Table · Maxime Boutillier for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/parisal-table-by-maxime-boutillier/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Parisal-Table_Maxime-Boutillier.webp"
+  },
+  {
+    "category": "MIRRORS",
+    "tier": "",
+    "name": "Miroir Rond 134 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/miroir-rond-134/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Weimar Credenza · Chris Lehrecke for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/weimar-credenza/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Credenza.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Weimar Stool · Chris Lehrecke for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/weimar-stool/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Stool.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Tabouret Capsule 216 174 335 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/tabouret-capsule/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_Hervevan_11.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Bruno Rotating Bookcase · India Mahdavi for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/bruno-rotating-bookcase/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/India_Mahdavi-Bruno-Rotating-Bookcase.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Pau Hana Lounge Chair · John Koga for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/pau-hana-work-is-over-lounge-chair/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/John_Koga-Pau-Hana-Lounge-Chair.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Numino Lounge Chair · Kevin Walz for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/numino/",
+    "image_url": ""
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Giverny Coffee Table Large · Lee F. Mindel for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/giverny-coffee-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/Giverny-Coffee-Table-2.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Amalfi Blue Side Table · Patrick Naggar for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-side-table/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/06/medium_pn_furn_outdoor_M_1-1.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Amalfi Blue Chair · Patrick Naggar for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-chair/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Amalfi Luminous Pink Chair · Patrick Naggar for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-chair/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Herman Mirror · Elizabeth Garouste for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/herman-mirror/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/Elizabeth-Garouste-Herman-Mirror.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Sideboard · Finn Juhl 1955 for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/sideboard-by-finn-juhl-1955/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg"
+  },
+  {
+    "category": "RAIKES ROOM",
+    "tier": "",
+    "name": "Pill Desk · Roman Andrusenko for Studio Twenty Seven",
+    "url": "https://studiotwentyseven.com/furniture/pill-desk-by-roman-andrusenko/",
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/09/STUDIOTWENTYSEVEN_Pill-Desk_Roman-Andrusenko.webp"
+  },
+  {
+    "category": "LIGHTS",
+    "tier": "",
+    "name": "Lustre Arthur 680 · Hervé Van der Straeten for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/lustre-arthur-680/",
+    "image_url": ""
+  },
+  {
+    "category": "LIGHTS",
+    "tier": "",
+    "name": "Geometric Sconce · Patrick Naggar for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/geometric-sconce/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/12/Patrick_Naggar-Geometric-Sconce.jpg"
+  },
+  {
+    "category": "SWINGS",
+    "tier": "",
+    "name": "Swing · Elizabeth Garouste for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/swing/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/06/Elizabeth-Garouste-Swing-1.jpg"
+  },
+  {
+    "category": "SWINGS",
+    "tier": "",
+    "name": "Hammock · Jim Zivic for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/hammock/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_jz_furn2013HamM.jpg"
+  },
+  {
+    "category": "SWINGS",
+    "tier": "",
+    "name": "Nautical Tech Outdoor Hammock · Jim Zivic for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/nautical-tech-hammock/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+  },
+  {
+    "category": "OUTDOOR",
+    "tier": "",
+    "name": "Round Ottoman Blackened Steel 48in · Fran Taubman for Ralph Pucci",
+    "url": "https://ralphpucci.com/collection/view/round-ottoman/",
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/02/346A6713.jpg"
+  },
+  {
+    "category": "OUTDOOR DINING TABLES",
+    "tier": "",
+    "name": "Michelangelo Dining Table · Exteta",
+    "url": "https://www.exteta.it/en/products/michelangelo/",
+    "image_url": ""
+  },
+  {
+    "category": "OUTDOOR DINING TABLES",
+    "tier": "",
+    "name": "Giotto Table · Exteta",
+    "url": "https://www.exteta.it/en/products/giotto/",
+    "image_url": ""
+  }
+]
