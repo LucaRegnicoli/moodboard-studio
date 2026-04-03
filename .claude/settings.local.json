@@ -3,7 +3,11 @@
     "allow": [
       "Bash(git -C /c/GH/LR/moodboard-studio log --oneline -10)",
       "Bash(git add:*)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Bash(git remote:*)",
+      "Bash(git pull:*)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)"
     ]
   }
 }
