@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/GH/LR/moodboard-studio log --oneline -10)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}
