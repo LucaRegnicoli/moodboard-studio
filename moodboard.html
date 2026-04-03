@@ -11,11 +11,11 @@
 
     /* === TOKENS === */
     :root {
-      --bg: #faf9f6;
-      --ink: #1a1a18;
-      --rule: #e2e0d8;
+      --bg: #1a1a18;
+      --ink: #faf9f6;
+      --rule: #333330;
       --accent: #c8b89a;
-      --placeholder-bg: #f2f0eb;
+      --placeholder-bg: #2a2a28;
       --serif: Georgia, 'Times New Roman', serif;
       --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       --sidebar-width: 260px;
@@ -546,10 +546,10 @@
     <section class="sidebar-section">
       <span class="sidebar-label">Colour theme</span>
       <div class="theme-swatches" id="theme-swatches">
-        <button class="theme-swatch active" data-theme="linen" title="Linen" style="background:#faf9f6;"></button>
+        <button class="theme-swatch" data-theme="linen" title="Linen" style="background:#faf9f6;"></button>
         <button class="theme-swatch" data-theme="slate" title="Slate" style="background:#f4f4f2;"></button>
         <button class="theme-swatch" data-theme="chalk" title="Chalk" style="background:#ffffff; border-color:#ccc;"></button>
-        <button class="theme-swatch" data-theme="noir" title="Noir" style="background:#1a1a18;"></button>
+        <button class="theme-swatch active" data-theme="noir" title="Noir" style="background:#1a1a18;"></button>
       </div>
       <div class="theme-labels">
         <span>Linen</span><span>Slate</span><span>Chalk</span><span>Noir</span>
@@ -601,7 +601,7 @@ const state = {
     date: new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })
   },
   layout: 'grid3',
-  theme: 'linen',
+  theme: 'noir',
   fonts: 'classic',
   visibleCategories: new Set(),
   visibleTiers: new Set()
