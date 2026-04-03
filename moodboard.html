@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodboard Studio</title>
+  <style>
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+
+    /* === TOKENS === */
+    :root {
+      --bg: #faf9f6;
+      --ink: #1a1a18;
+      --rule: #e2e0d8;
+      --accent: #c8b89a;
+      --placeholder-bg: #f2f0eb;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --sidebar-width: 260px;
+      --topbar-height: 56px;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    /* === TOPBAR === */
+    #topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--topbar-height);
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 200;
+    }
+    .topbar-logo {
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+    }
+    .topbar-actions { display: flex; gap: 8px; align-items: center; }
+
+    /* === APP SHELL === */
+    #app {
+      display: flex;
+      margin-top: var(--topbar-height);
+      height: calc(100vh - var(--topbar-height));
+    }
+
+    /* === SIDEBAR === */
+    #sidebar {
+      width: var(--sidebar-width);
+      flex-shrink: 0;
+      height: 100%;
+      overflow-y: auto;
+      border-right: 1px solid var(--rule);
+      background: var(--bg);
+      padding: 20px 16px 48px;
+    }
+    .sidebar-section { margin-bottom: 4px; }
+    .sidebar-label {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    hr.sidebar-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 16px 0;
+    }
+
+    /* === DROP ZONE === */
+    #drop-zone {
+      border: 1px dashed var(--rule);
+      padding: 20px 12px;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    #drop-zone.drag-over {
+      border-color: var(--accent);
+      background: var(--placeholder-bg);
+    }
+    #drop-zone p { font-size: 11px; color: var(--accent); line-height: 1.7; }
+    .link-label { text-decoration: underline; cursor: pointer; color: var(--ink); }
+    #upload-status { font-size: 10px; color: var(--accent); margin-bottom: 6px; min-height: 14px; }
+    #upload-status.error { color: #a33; }
+
+    .header-img-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .header-img-row .sidebar-label { margin-bottom: 0; flex-shrink: 0; }
+
+    /* === INPUTS === */
+    .sidebar-input {
+      width: 100%;
+      border: 1px solid var(--rule);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 12px;
+      padding: 7px 9px;
+      margin-bottom: 6px;
+      outline: none;
+    }
+    .sidebar-input:focus { border-color: var(--accent); }
+
+    /* === BUTTONS === */
+    .btn {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      padding: 7px 14px;
+      border: 1px solid var(--ink);
+      background: var(--bg);
+      color: var(--ink);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.12s, color 0.12s;
+    }
+    .btn:hover:not(:disabled) { background: var(--ink); color: var(--bg); }
+    .btn-primary { background: var(--ink); color: var(--bg); }
+    .btn-primary:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+    .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .btn-sm { font-size: 10px; padding: 4px 10px; }
+
+    /* === LAYOUT OPTIONS === */
+    .layout-options { display: flex; gap: 6px; }
+    .layout-option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+    }
+    .layout-option input[type="radio"] { display: none; }
+    .layout-icon {
+      width: 52px;
+      height: 38px;
+      border: 1px solid var(--rule);
+      padding: 5px;
+      color: var(--rule);
+      transition: border-color 0.12s, color 0.12s;
+    }
+    .layout-icon svg { width: 100%; height: 100%; display: block; }
+    .layout-option input:checked ~ .layout-icon { border-color: var(--ink); color: var(--ink); }
+    .layout-option input:checked ~ span { color: var(--ink); }
+
+    /* === THEME SWATCHES === */
+    .theme-swatches { display: flex; gap: 8px; margin-bottom: 4px; }
+    .theme-swatch {
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      padding: 0;
+      transition: box-shadow 0.12s;
+    }
+    .theme-swatch.active { box-shadow: 0 0 0 2px var(--ink); }
+
+    .theme-labels, .font-labels {
+      display: flex;
+      gap: 0;
+      margin-bottom: 10px;
+    }
+    .theme-labels span {
+      font-size: 9px;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      width: 36px;
+      text-align: center;
+    }
+    .font-labels span {
+      font-size: 9px;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      width: 60px;
+      text-align: center;
+    }
+
+    /* === FONT OPTIONS === */
+    .font-options { display: flex; gap: 8px; margin-bottom: 4px; }
+    .font-option {
+      width: 52px;
+      height: 34px;
+      border: 1px solid var(--rule);
+      background: var(--bg);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.12s;
+      padding: 0;
+    }
+    .font-option.active { border-color: var(--ink); }
+
+    /* === FILTERS === */
+    .filter-legend {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 7px;
+    }
+    .filter-check {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 5px;
+      font-size: 11px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .filter-check input[type="checkbox"] { accent-color: var(--ink); cursor: pointer; }
+    #filter-tiers { margin-top: 14px; }
+
+    /* === CANVAS AREA === */
+    #canvas-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 40px;
+      background: #edeae2;
+    }
+
+    /* === BOARD === */
+    #board {
+      background: var(--bg);
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 64px;
+      border: 1px solid var(--rule);
+      color: var(--ink);
+    }
+
+    /* === BOARD HEADER === */
+    .board-header { margin-bottom: 48px; }
+    .board-header-meta h1 {
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+    .board-subtitle {
+      font-size: 13px;
+      color: var(--accent);
+      margin-top: 7px;
+      font-family: var(--sans);
+    }
+    .board-meta-line {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: 0.5;
+      margin-top: 8px;
+    }
+    .board-header-image { margin-top: 28px; width: 100%; overflow: hidden; }
+    .board-header-image img { width: 100%; height: 200px; object-fit: cover; display: block; }
+
+    /* === CATEGORY HEADING === */
+    .category-section { margin-bottom: 48px; }
+    .category-heading {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .category-heading h2 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: normal;
+      white-space: nowrap;
+      color: var(--ink);
+    }
+    .category-rule { flex: 1; border: none; border-top: 1px solid var(--rule); }
+
+    /* === CARD GRID === */
+    .card-grid { display: grid; gap: 20px; }
+    .card-grid.layout-grid2 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid.layout-grid3 { grid-template-columns: repeat(3, 1fr); }
+    .card-grid.layout-editorial { grid-template-columns: repeat(6, 1fr); }
+
+    /* Editorial: narrow (2), wide (4), full (6) */
+    .card-grid.layout-editorial .product-card:nth-child(3n-2) { grid-column: span 2; }
+    .card-grid.layout-editorial .product-card:nth-child(3n-1) { grid-column: span 4; }
+    .card-grid.layout-editorial .product-card:nth-child(3n) {
+      grid-column: span 6;
+      display: grid;
+      grid-template-columns: 55% 45%;
+    }
+    /* Full-span card: override padding-bottom trick, use explicit height */
+    .card-grid.layout-editorial .product-card:nth-child(3n) .card-image-wrap {
+      padding-bottom: 0;
+      min-height: 260px;
+    }
+    .card-grid.layout-editorial .product-card:nth-child(3n) .card-image-wrap img,
+    .card-grid.layout-editorial .product-card:nth-child(3n) .card-image-wrap .image-placeholder {
+      height: 100%;
+    }
+    .card-grid.layout-editorial .product-card:nth-child(3n) .card-body {
+      border-top: none;
+      border-left: 1px solid var(--rule);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* === PRODUCT CARD === */
+    .product-card { border: 1px solid var(--rule); background: var(--bg); overflow: hidden; }
+
+    /* Padding-bottom trick for 4:3 ratio — html2canvas compatible */
+    .card-image-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%;
+      overflow: hidden;
+      background: var(--placeholder-bg);
+    }
+    .card-image-wrap img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .image-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--accent);
+      font-family: var(--sans);
+      background: var(--placeholder-bg);
+    }
+    .card-body { padding: 14px 14px 12px; border-top: 1px solid var(--rule); }
+    .card-tier-badge {
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 5px;
+    }
+    .card-name {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.3;
+      margin-bottom: 3px;
+      color: var(--ink);
+    }
+    .card-category {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: 0.45;
+      margin-bottom: 10px;
+    }
+    .card-link a {
+      font-size: 11px;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.12s;
+    }
+    .card-link a:hover { border-bottom-color: var(--accent); }
+
+    /* === BOARD FOOTER === */
+    .board-footer {
+      margin-top: 56px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 12px;
+      white-space: nowrap;
+      color: var(--ink);
+    }
+    .footer-rule { flex: 1; border: none; border-top: 1px solid var(--rule); }
+    .footer-date {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: 0.5;
+      white-space: nowrap;
+    }
+
+    /* === EMPTY STATE === */
+    #empty-state { padding: 100px 0; text-align: center; }
+    .empty-heading {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: normal;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .empty-body { font-size: 13px; color: var(--accent); line-height: 1.7; }
+
+    /* === EXPORT OVERLAY === */
+    #export-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(250, 249, 246, 0.82);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .export-spinner {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      border: 1px solid var(--rule);
+      padding: 20px 36px;
+      background: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+<header id="topbar">
+  <span class="topbar-logo">Moodboard Studio</span>
+  <div class="topbar-actions">
+    <button id="btn-export-png" class="btn" disabled>Export PNG</button>
+    <button id="btn-export-pdf" class="btn btn-primary" disabled>Export PDF</button>
+  </div>
+</header>
+
+<div id="app">
+  <aside id="sidebar">
+
+    <!-- 1. Data upload -->
+    <section class="sidebar-section">
+      <span class="sidebar-label">Data</span>
+      <div id="drop-zone">
+        <p>Drop JSON here<br>or <label for="json-input" class="link-label">browse file</label></p>
+        <input type="file" id="json-input" accept=".json" style="display:none">
+      </div>
+      <div id="upload-status"></div>
+      <div class="header-img-row">
+        <span class="sidebar-label">Header image</span>
+        <label for="header-img-input" class="btn btn-sm">Upload</label>
+        <input type="file" id="header-img-input" accept="image/*" style="display:none">
+        <button id="btn-clear-header" class="btn btn-sm" style="display:none">Remove</button>
+      </div>
+    </section>
+
+    <hr class="sidebar-rule">
+
+    <!-- 2. Board info -->
+    <section class="sidebar-section">
+      <span class="sidebar-label">Board info</span>
+      <input type="text" id="input-title" class="sidebar-input" placeholder="Board title" value="Furniture Selection">
+      <input type="text" id="input-subtitle" class="sidebar-input" placeholder="Subtitle">
+      <input type="text" id="input-client" class="sidebar-input" placeholder="Client name">
+      <input type="text" id="input-date" class="sidebar-input" placeholder="Date">
+    </section>
+
+    <hr class="sidebar-rule">
+
+    <!-- 3. Layout -->
+    <section class="sidebar-section">
+      <span class="sidebar-label">Layout</span>
+      <div class="layout-options">
+        <label class="layout-option">
+          <input type="radio" name="layout" value="grid2">
+          <div class="layout-icon">
+            <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="17" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="1" width="17" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="1" y="17" width="17" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="17" width="17" height="12" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span>2-col</span>
+        </label>
+        <label class="layout-option">
+          <input type="radio" name="layout" value="grid3" checked>
+          <div class="layout-icon">
+            <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="15" y="1" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="29" y="1" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="1" y="17" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="15" y="17" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="29" y="17" width="10" height="12" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span>3-col</span>
+        </label>
+        <label class="layout-option">
+          <input type="radio" name="layout" value="editorial">
+          <div class="layout-icon">
+            <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="13" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="18" y="1" width="21" height="12" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="1" y="17" width="38" height="12" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span>Editorial</span>
+        </label>
+      </div>
+    </section>
+
+    <hr class="sidebar-rule">
+
+    <!-- 4. Appearance -->
+    <section class="sidebar-section">
+      <span class="sidebar-label">Colour theme</span>
+      <div class="theme-swatches" id="theme-swatches">
+        <button class="theme-swatch active" data-theme="linen" title="Linen" style="background:#faf9f6;"></button>
+        <button class="theme-swatch" data-theme="slate" title="Slate" style="background:#f4f4f2;"></button>
+        <button class="theme-swatch" data-theme="chalk" title="Chalk" style="background:#ffffff; border-color:#ccc;"></button>
+        <button class="theme-swatch" data-theme="noir" title="Noir" style="background:#1a1a18;"></button>
+      </div>
+      <div class="theme-labels">
+        <span>Linen</span><span>Slate</span><span>Chalk</span><span>Noir</span>
+      </div>
+
+      <span class="sidebar-label" style="display:block; margin-top:4px">Font pairing</span>
+      <div class="font-options" id="font-options">
+        <button class="font-option active" data-fonts="classic" style="font-family:Georgia,serif">Aa</button>
+        <button class="font-option" data-fonts="modern" style="font-family:'Bodoni MT',Didot,serif">Aa</button>
+        <button class="font-option" data-fonts="slab" style="font-family:Rockwell,'Courier New',serif">Aa</button>
+      </div>
+      <div class="font-labels">
+        <span>Classic</span><span>Modern</span><span>Slab</span>
+      </div>
+    </section>
+
+    <hr class="sidebar-rule">
+
+    <!-- 5. Filters (dynamically populated) -->
+    <section class="sidebar-section" id="section-filters" style="display:none">
+      <div id="filter-categories"></div>
+      <div id="filter-tiers"></div>
+    </section>
+
+  </aside>
+
+  <main id="canvas-area">
+    <div id="board"></div>
+  </main>
+</div>
+
+<div id="export-overlay" style="display:none">
+  <div class="export-spinner">Generating export…</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+// ============================================================
+// STATE
+// ============================================================
+const state = {
+  products: [],
+  headerImageSrc: null,
+  meta: {
+    title: 'Furniture Selection',
+    subtitle: '',
+    client: '',
+    date: new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })
+  },
+  layout: 'grid3',
+  theme: 'linen',
+  fonts: 'classic',
+  visibleCategories: new Set(),
+  visibleTiers: new Set()
+};
+
+// ============================================================
+// THEME & FONT DEFINITIONS
+// ============================================================
+const THEMES = {
+  linen: { bg: '#faf9f6', ink: '#1a1a18', rule: '#e2e0d8', accent: '#c8b89a', placeholder: '#f2f0eb' },
+  slate: { bg: '#f4f4f2', ink: '#1c2b3a', rule: '#d4d8dc', accent: '#7a9bb5', placeholder: '#eaecee' },
+  chalk: { bg: '#ffffff',  ink: '#111111', rule: '#e0e0e0', accent: '#999999', placeholder: '#f5f5f5' },
+  noir:  { bg: '#1a1a18', ink: '#faf9f6', rule: '#333330', accent: '#c8b89a', placeholder: '#2a2a28' }
+};
+
+const FONTS = {
+  classic: {
+    serif: "Georgia, 'Times New Roman', serif",
+    sans:  "'Helvetica Neue', Helvetica, Arial, sans-serif"
+  },
+  modern: {
+    serif: "'Bodoni MT', Didot, 'Times New Roman', serif",
+    sans:  "'Century Gothic', Futura, Arial, sans-serif"
+  },
+  slab: {
+    serif: "Rockwell, 'Rockwell Nova', 'Courier New', serif",
+    sans:  "'Gill Sans', 'Gill Sans MT', Calibri, sans-serif"
+  }
+};
+
+// ============================================================
+// INIT
+// ============================================================
+function init() {
+  document.getElementById('input-date').value = state.meta.date;
+
+  // Drop zone
+  const dz = document.getElementById('drop-zone');
+  dz.addEventListener('dragover', e => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy';
+    dz.classList.add('drag-over');
+  });
+  dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+  dz.addEventListener('drop', e => {
+    e.preventDefault();
+    dz.classList.remove('drag-over');
+    const f = e.dataTransfer.files[0];
+    if (f) loadJSONFile(f);
+  });
+  dz.addEventListener('click', e => {
+    if (e.target.tagName !== 'LABEL') document.getElementById('json-input').click();
+  });
+  document.getElementById('json-input').addEventListener('change', e => {
+    if (e.target.files[0]) loadJSONFile(e.target.files[0]);
+  });
+
+  // Header image
+  document.getElementById('header-img-input').addEventListener('change', e => {
+    if (e.target.files[0]) handleHeaderImageUpload(e.target.files[0]);
+  });
+  document.getElementById('btn-clear-header').addEventListener('click', () => {
+    state.headerImageSrc = null;
+    document.getElementById('btn-clear-header').style.display = 'none';
+    document.getElementById('header-img-input').value = '';
+    renderBoard();
+  });
+
+  bindMetaInputs();
+  bindLayoutControls();
+  bindThemeControls();
+  bindFontControls();
+
+  document.getElementById('btn-export-png').addEventListener('click', exportPNG);
+  document.getElementById('btn-export-pdf').addEventListener('click', exportPDF);
+
+  renderBoard();
+}
+
+// ============================================================
+// UPLOAD
+// ============================================================
+function loadJSONFile(file) {
+  const status = document.getElementById('upload-status');
+  status.textContent = 'Reading…';
+  status.className = '';
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      parseProducts(e.target.result);
+      status.textContent = state.products.length + ' products loaded';
+      populateFilters();
+      renderBoard();
+      setExportEnabled(true);
+    } catch (err) {
+      status.textContent = 'Error: ' + err.message;
+      status.className = 'error';
+    }
+  };
+  reader.onerror = () => {
+    status.textContent = 'Failed to read file';
+    status.className = 'error';
+  };
+  reader.readAsText(file);
+}
+
+function parseProducts(jsonText) {
+  const data = JSON.parse(jsonText);
+  if (!Array.isArray(data)) throw new Error('JSON must be an array');
+  state.products = data;
+  state.visibleCategories = new Set(getUnique(data, 'category'));
+  state.visibleTiers = new Set(getUnique(data, 'tier'));
+}
+
+function handleHeaderImageUpload(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    state.headerImageSrc = e.target.result;
+    document.getElementById('btn-clear-header').style.display = '';
+    renderBoard();
+  };
+  reader.readAsDataURL(file);
+}
+
+// ============================================================
+// SIDEBAR BINDINGS
+// ============================================================
+function bindMetaInputs() {
+  [
+    { id: 'input-title',    key: 'title' },
+    { id: 'input-subtitle', key: 'subtitle' },
+    { id: 'input-client',   key: 'client' },
+    { id: 'input-date',     key: 'date' }
+  ].forEach(({ id, key }) => {
+    document.getElementById(id).addEventListener('input', e => {
+      state.meta[key] = e.target.value;
+      renderBoardMeta();
+    });
+  });
+}
+
+function bindLayoutControls() {
+  document.querySelectorAll('input[name="layout"]').forEach(radio => {
+    radio.addEventListener('change', e => {
+      state.layout = e.target.value;
+      applyLayout();
+    });
+  });
+}
+
+function bindThemeControls() {
+  document.querySelectorAll('.theme-swatch').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.theme = btn.dataset.theme;
+      document.querySelectorAll('.theme-swatch').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyTheme(state.theme);
+    });
+  });
+}
+
+function bindFontControls() {
+  document.querySelectorAll('.font-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.fonts = btn.dataset.fonts;
+      document.querySelectorAll('.font-option').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFonts(state.fonts);
+    });
+  });
+}
+
+function applyTheme(name) {
+  const t = THEMES[name];
+  const r = document.documentElement.style;
+  r.setProperty('--bg',              t.bg);
+  r.setProperty('--ink',             t.ink);
+  r.setProperty('--rule',            t.rule);
+  r.setProperty('--accent',          t.accent);
+  r.setProperty('--placeholder-bg',  t.placeholder);
+}
+
+function applyFonts(name) {
+  const f = FONTS[name];
+  document.documentElement.style.setProperty('--serif', f.serif);
+  document.documentElement.style.setProperty('--sans',  f.sans);
+}
+
+function populateFilters() {
+  const categories = getUnique(state.products, 'category');
+  const tiers = getUnique(state.products, 'tier');
+
+  document.getElementById('section-filters').style.display = '';
+
+  // Categories
+  const catEl = document.getElementById('filter-categories');
+  catEl.innerHTML = '';
+  const catLegend = document.createElement('span');
+  catLegend.className = 'filter-legend';
+  catLegend.textContent = 'Categories';
+  catEl.appendChild(catLegend);
+  categories.forEach(cat => catEl.appendChild(makeCheckbox(cat, true, checked => {
+    checked ? state.visibleCategories.add(cat) : state.visibleCategories.delete(cat);
+    renderBoard();
+  })));
+
+  // Tiers
+  const tierEl = document.getElementById('filter-tiers');
+  tierEl.innerHTML = '';
+  const tierLegend = document.createElement('span');
+  tierLegend.className = 'filter-legend';
+  tierLegend.textContent = 'Tiers';
+  tierEl.appendChild(tierLegend);
+  tiers.forEach(tier => tierEl.appendChild(makeCheckbox(tier, true, checked => {
+    checked ? state.visibleTiers.add(tier) : state.visibleTiers.delete(tier);
+    renderBoard();
+  })));
+}
+
+function makeCheckbox(label, initialChecked, onChange) {
+  const el = document.createElement('label');
+  el.className = 'filter-check';
+  const cb = document.createElement('input');
+  cb.type = 'checkbox';
+  cb.checked = initialChecked;
+  cb.addEventListener('change', () => onChange(cb.checked));
+  el.appendChild(cb);
+  el.appendChild(document.createTextNode(label));
+  return el;
+}
+
+// ============================================================
+// RENDER PIPELINE
+// ============================================================
+function renderBoard() {
+  const board = document.getElementById('board');
+  board.innerHTML = '';
+
+  if (state.products.length === 0) {
+    board.appendChild(renderEmptyState());
+    return;
+  }
+
+  board.appendChild(renderBoardHeader());
+
+  const filtered = getFilteredProducts();
+  const grouped = groupByCategory(filtered);
+
+  const body = document.createElement('div');
+  body.className = 'board-body';
+
+  let hasVisible = false;
+  grouped.forEach((products, category) => {
+    if (products.length > 0) {
+      hasVisible = true;
+      body.appendChild(renderCategorySection(category, products));
+    }
+  });
+
+  if (!hasVisible) {
+    const msg = document.createElement('div');
+    msg.style.cssText = 'padding:60px 0;text-align:center;font-size:13px;color:var(--accent)';
+    msg.textContent = 'No products match the current filters.';
+    body.appendChild(msg);
+  }
+
+  board.appendChild(body);
+  board.appendChild(renderBoardFooter());
+}
+
+function renderEmptyState() {
+  const div = document.createElement('div');
+  div.id = 'empty-state';
+  const h = document.createElement('h2');
+  h.className = 'empty-heading';
+  h.textContent = 'Your moodboard begins here.';
+  const p = document.createElement('p');
+  p.className = 'empty-body';
+  p.textContent = 'Upload a JSON file from the sidebar to populate the board.';
+  div.appendChild(h);
+  div.appendChild(p);
+  return div;
+}
+
+function renderBoardHeader() {
+  const header = document.createElement('div');
+  header.className = 'board-header';
+
+  const meta = document.createElement('div');
+  meta.className = 'board-header-meta';
+
+  const h1 = document.createElement('h1');
+  h1.id = 'board-title';
+  h1.textContent = state.meta.title || 'Untitled Moodboard';
+  meta.appendChild(h1);
+
+  const sub = document.createElement('p');
+  sub.id = 'board-subtitle';
+  sub.className = 'board-subtitle';
+  sub.textContent = state.meta.subtitle;
+  sub.style.display = state.meta.subtitle ? '' : 'none';
+  meta.appendChild(sub);
+
+  const metaLine = document.createElement('p');
+  metaLine.id = 'board-meta-line';
+  metaLine.className = 'board-meta-line';
+  const parts = [];
+  if (state.meta.client) parts.push(state.meta.client);
+  if (state.meta.date)   parts.push(state.meta.date);
+  metaLine.textContent = parts.join('  ·  ');
+  metaLine.style.display = parts.length ? '' : 'none';
+  meta.appendChild(metaLine);
+
+  header.appendChild(meta);
+
+  if (state.headerImageSrc) {
+    const wrap = document.createElement('div');
+    wrap.className = 'board-header-image';
+    const img = document.createElement('img');
+    img.src = state.headerImageSrc;
+    img.alt = '';
+    wrap.appendChild(img);
+    header.appendChild(wrap);
+  }
+
+  return header;
+}
+
+function renderBoardFooter() {
+  const footer = document.createElement('div');
+  footer.className = 'board-footer';
+
+  const brand = document.createElement('span');
+  brand.className = 'footer-brand';
+  brand.textContent = state.meta.client || 'Moodboard Studio';
+  footer.appendChild(brand);
+
+  const rule = document.createElement('hr');
+  rule.className = 'footer-rule';
+  footer.appendChild(rule);
+
+  const date = document.createElement('span');
+  date.className = 'footer-date';
+  date.id = 'board-footer-date';
+  date.textContent = state.meta.date;
+  footer.appendChild(date);
+
+  return footer;
+}
+
+function renderCategorySection(categoryName, products) {
+  const section = document.createElement('div');
+  section.className = 'category-section';
+
+  const heading = document.createElement('div');
+  heading.className = 'category-heading';
+  const h2 = document.createElement('h2');
+  h2.textContent = categoryName;
+  const rule = document.createElement('hr');
+  rule.className = 'category-rule';
+  heading.appendChild(h2);
+  heading.appendChild(rule);
+  section.appendChild(heading);
+
+  const grid = document.createElement('div');
+  grid.className = 'card-grid layout-' + state.layout;
+  products.forEach(p => grid.appendChild(renderProductCard(p)));
+  section.appendChild(grid);
+
+  return section;
+}
+
+function renderProductCard(product) {
+  const card = document.createElement('div');
+  card.className = 'product-card';
+
+  // Image
+  const imgWrap = document.createElement('div');
+  imgWrap.className = 'card-image-wrap';
+
+  const img = document.createElement('img');
+  img.crossOrigin = 'anonymous'; // must be set before src
+  img.alt = String(product.name || '');
+  img.onerror = () => {
+    if (imgWrap.contains(img)) imgWrap.removeChild(img);
+    const ph = document.createElement('div');
+    ph.className = 'image-placeholder';
+    ph.textContent = 'Image unavailable';
+    imgWrap.appendChild(ph);
+  };
+  img.src = String(product.image_url || '');
+
+  imgWrap.appendChild(img);
+  card.appendChild(imgWrap);
+
+  // Body
+  const body = document.createElement('div');
+  body.className = 'card-body';
+
+  const tier = document.createElement('div');
+  tier.className = 'card-tier-badge';
+  tier.textContent = String(product.tier || '');
+  body.appendChild(tier);
+
+  const name = document.createElement('div');
+  name.className = 'card-name';
+  name.textContent = String(product.name || '');
+  body.appendChild(name);
+
+  const cat = document.createElement('div');
+  cat.className = 'card-category';
+  cat.textContent = String(product.category || '');
+  body.appendChild(cat);
+
+  if (product.url) {
+    const linkWrap = document.createElement('div');
+    linkWrap.className = 'card-link';
+    const a = document.createElement('a');
+    a.href = String(product.url);
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'View product \u2192';
+    a.title = String(product.name || 'View product');
+    linkWrap.appendChild(a);
+    body.appendChild(linkWrap);
+  }
+
+  card.appendChild(body);
+  return card;
+}
+
+// Lightweight meta update — avoids reloading images on every keypress
+function renderBoardMeta() {
+  const titleEl    = document.getElementById('board-title');
+  const subEl      = document.getElementById('board-subtitle');
+  const metaEl     = document.getElementById('board-meta-line');
+  const dateEl     = document.getElementById('board-footer-date');
+  const brandEl    = document.querySelector('.footer-brand');
+
+  if (titleEl) titleEl.textContent = state.meta.title || 'Untitled Moodboard';
+
+  if (subEl) {
+    subEl.textContent = state.meta.subtitle;
+    subEl.style.display = state.meta.subtitle ? '' : 'none';
+  }
+
+  if (metaEl) {
+    const parts = [];
+    if (state.meta.client) parts.push(state.meta.client);
+    if (state.meta.date)   parts.push(state.meta.date);
+    metaEl.textContent = parts.join('  \u00b7  ');
+    metaEl.style.display = parts.length ? '' : 'none';
+  }
+
+  if (dateEl)  dateEl.textContent  = state.meta.date;
+  if (brandEl) brandEl.textContent = state.meta.client || 'Moodboard Studio';
+}
+
+// Swap layout class without full re-render (preserves loaded images)
+function applyLayout() {
+  document.querySelectorAll('.card-grid').forEach(grid => {
+    grid.className = 'card-grid layout-' + state.layout;
+  });
+}
+
+// ============================================================
+// FILTERING & GROUPING
+// ============================================================
+function getFilteredProducts() {
+  return state.products.filter(p =>
+    state.visibleCategories.has(p.category) &&
+    state.visibleTiers.has(p.tier)
+  );
+}
+
+function groupByCategory(products) {
+  const map = new Map();
+  products.forEach(p => {
+    if (!map.has(p.category)) map.set(p.category, []);
+    map.get(p.category).push(p);
+  });
+  return map;
+}
+
+// ============================================================
+// EXPORT
+// ============================================================
+function setExportEnabled(enabled) {
+  document.getElementById('btn-export-png').disabled = !enabled;
+  document.getElementById('btn-export-pdf').disabled = !enabled;
+}
+
+function showOverlay(show) {
+  document.getElementById('export-overlay').style.display = show ? '' : 'none';
+}
+
+function getBoardBg() {
+  return getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#faf9f6';
+}
+
+function captureBoard() {
+  return html2canvas(document.getElementById('board'), {
+    useCORS:         true,
+    allowTaint:      false,
+    backgroundColor: getBoardBg(),
+    scale:           3,
+    logging:         false
+  });
+}
+
+function exportPNG() {
+  showOverlay(true);
+  captureBoard()
+    .then(canvas => {
+      const a = document.createElement('a');
+      a.download = 'moodboard.png';
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+    })
+    .catch(err => {
+      console.error('PNG export failed:', err);
+      alert('Export failed. Images may be blocked by CORS. Check the browser console for details.');
+    })
+    .finally(() => showOverlay(false));
+}
+
+function exportPDF() {
+  showOverlay(true);
+  captureBoard()
+    .then(canvas => {
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
+
+      const A4_W = 297; // mm
+      const A4_H = 210; // mm
+
+      // px → mm conversion based on full canvas width = A4 width
+      const mmPerPx      = A4_W / canvas.width;
+      const pageHeightPx = Math.floor(A4_H / mmPerPx);
+      const totalPages   = Math.ceil(canvas.height / pageHeightPx);
+      const bgFill       = getBoardBg();
+
+      for (let i = 0; i < totalPages; i++) {
+        if (i > 0) pdf.addPage();
+
+        const srcY  = i * pageHeightPx;
+        const srcH  = Math.min(pageHeightPx, canvas.height - srcY);
+        const destH = srcH * mmPerPx;
+
+        // Slice canvas for this page
+        const slice = document.createElement('canvas');
+        slice.width  = canvas.width;
+        slice.height = srcH;
+        const ctx = slice.getContext('2d');
+        ctx.fillStyle = bgFill;
+        ctx.fillRect(0, 0, slice.width, slice.height);
+        ctx.drawImage(canvas, 0, srcY, canvas.width, srcH, 0, 0, canvas.width, srcH);
+
+        pdf.addImage(slice.toDataURL('image/png'), 'PNG', 0, 0, A4_W, destH);
+      }
+
+      pdf.save('moodboard.pdf');
+    })
+    .catch(err => {
+      console.error('PDF export failed:', err);
+      alert('Export failed. Images may be blocked by CORS. Check the browser console for details.');
+    })
+    .finally(() => showOverlay(false));
+}
+
+// ============================================================
+// UTILITIES
+// ============================================================
+function getUnique(arr, key) {
+  return [...new Set(arr.map(item => item[key]).filter(Boolean))];
+}
+
+// ============================================================
+// START
+// ============================================================
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
