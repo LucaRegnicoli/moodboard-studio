@@ -1160,11 +1160,12 @@ function getBoardBg() {
 // ============================================================
 const EXPORT_SCALE = 3;
 const MAX_CANVAS_DIM = 16383; // safe upper limit across all browsers
+const EXPORT_ERR_MSG = 'Export failed. Some images may be blocked by CORS.';
 
-function html2canvasOpts(extra) {
+function html2canvasOpts(bg, extra) {
   return Object.assign({
     useCORS: true, allowTaint: true,
-    backgroundColor: getBoardBg(),
+    backgroundColor: bg,
     logging: false,
     ignoreElements: el => el.id === 'export-overlay'
   }, extra);
@@ -1173,16 +1174,15 @@ function html2canvasOpts(extra) {
 function exportPNG() {
   showOverlay(true);
   const board = document.getElementById('board');
-  // Scale down if the board is too tall for a single canvas
   const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
-  html2canvas(board, html2canvasOpts({ scale }))
+  html2canvas(board, html2canvasOpts(getBoardBg(), { scale }))
     .then(canvas => {
       const a = document.createElement('a');
       a.download = 'moodboard.png';
       a.href = canvas.toDataURL('image/png');
       a.click();
     })
-    .catch(err => { console.error('PNG export failed:', err); alert('Export failed. Some images may be blocked by CORS.'); })
+    .catch(err => { console.error('PNG export failed:', err); alert(EXPORT_ERR_MSG); })
     .finally(() => showOverlay(false));
 }
 
@@ -1192,13 +1192,14 @@ async function exportPDF() {
     const board  = document.getElementById('board');
     const boardW = board.offsetWidth;
     const boardH = board.scrollHeight;
+    const bg     = getBoardBg(); // resolved once; getComputedStyle is expensive in a loop
 
     const { jsPDF } = window.jspdf;
     const A4_W = 210; // mm — portrait
     const A4_H = 297; // mm
 
     const mmPerPx      = A4_W / boardW;
-    const pageHeightPx = Math.round(A4_H / mmPerPx); // board px per A4 page
+    const pageHeightPx = Math.round(A4_H / mmPerPx);
     const totalPages   = Math.ceil(boardH / pageHeightPx);
 
     const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
@@ -1210,13 +1211,13 @@ async function exportPDF() {
       const srcH  = Math.min(pageHeightPx, boardH - srcY);
       const destH = srcH * mmPerPx;
 
-      // Capture only this page's slice — keeps each canvas well within size limits
-      const canvas = await html2canvas(board, html2canvasOpts({
+      const canvas = await html2canvas(board, html2canvasOpts(bg, {
         scale: EXPORT_SCALE,
         y: srcY, height: srcH
       }));
 
       pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, A4_W, destH);
+      canvas.width = 0; // release GPU memory before next tile
     }
 
     pdf.save('moodboard.pdf');
