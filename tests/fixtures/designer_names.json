@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Chairs",
+    "tier": "",
+    "name": "Eames Lounge Chair · Charles & Ray Eames",
+    "url": "https://example.com/eames",
+    "image_url": ""
+  },
+  {
+    "category": "Chairs",
+    "tier": "",
+    "name": "Chair Without Designer",
+    "url": "https://example.com/plain",
+    "image_url": ""
+  }
+]

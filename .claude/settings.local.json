@@ -24,7 +24,20 @@
       "Bash(npm uninstall:*)",
       "Bash(rm -rf node_modules package.json package-lock.json)",
       "Bash(npm init:*)",
-      "Bash(rm test-export.js debug-page1.jpg)"
+      "Bash(rm test-export.js debug-page1.jpg)",
+      "Bash(python -m http.server 8765)",
+      "Bash(python -m http.server 8766)",
+      "Bash(python -m http.server 8767)",
+      "Bash(python -m http.server 7890)",
+      "Bash(python -m http.server 9000 --bind 127.0.0.1)",
+      "Read(//tmp/**)",
+      "Bash(python -m http.server 9001)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:9001/index.html)",
+      "Bash(python:*)",
+      "Bash(git:*)",
+      "Bash(playwright install:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)"
     ]
   }
 }

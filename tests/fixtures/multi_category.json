@@ -1,0 +1,12 @@
+[
+  {"category": "Sofas",   "tier": "High-end",  "name": "Sofa A",   "url": "https://example.com/a", "image_url": ""},
+  {"category": "Sofas",   "tier": "High-end",  "name": "Sofa B",   "url": "https://example.com/b", "image_url": ""},
+  {"category": "Sofas",   "tier": "Mid-range", "name": "Sofa C",   "url": "https://example.com/c", "image_url": ""},
+  {"category": "Tables",  "tier": "High-end",  "name": "Table A",  "url": "https://example.com/d", "image_url": ""},
+  {"category": "Tables",  "tier": "Mid-range", "name": "Table B",  "url": "https://example.com/e", "image_url": ""},
+  {"category": "Chairs",  "tier": "",          "name": "Chair A",  "url": "https://example.com/f", "image_url": ""},
+  {"category": "Chairs",  "tier": "",          "name": "Chair B",  "url": "https://example.com/g", "image_url": ""},
+  {"category": "Lighting","tier": "Budget",    "name": "Lamp A",   "url": "https://example.com/h", "image_url": ""},
+  {"category": "Lighting","tier": "Budget",    "name": "Lamp B",   "url": "https://example.com/i", "image_url": ""},
+  {"category": "Lighting","tier": "Budget",    "name": "Lamp C",   "url": "https://example.com/j", "image_url": ""}
+]

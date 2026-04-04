@@ -1,0 +1,35 @@
+[
+  {
+    "category": "Sofas",
+    "tier": "High-end",
+    "name": "Arc Sofa · Bensen",
+    "url": "https://example.com/arc-sofa",
+    "image_url": "",
+    "dimensions": "W 220 × D 95 × H 75 cm",
+    "materials": "Solid oak",
+    "finishes": "Natural",
+    "notes": "12 week lead time"
+  },
+  {
+    "category": "Sofas",
+    "tier": "Mid-range",
+    "name": "Cloud Sofa",
+    "url": "https://example.com/cloud",
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
+  },
+  {
+    "category": "Tables",
+    "tier": "High-end",
+    "name": "Slab Table",
+    "url": "https://example.com/slab",
+    "image_url": "",
+    "dimensions": "W 180 × D 90 × H 74 cm",
+    "materials": "Marble, Steel",
+    "finishes": "Polished",
+    "notes": ""
+  }
+]
