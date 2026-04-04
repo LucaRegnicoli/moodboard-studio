@@ -51,6 +51,16 @@
       color: var(--ink);
     }
     .topbar-actions { display: flex; gap: 8px; align-items: center; }
+    .topbar-docs {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 4px;
+    }
+    .topbar-docs:hover { color: var(--ink); }
 
     /* === APP SHELL === */
     #app {
@@ -502,6 +512,7 @@
 <header id="topbar">
   <span class="topbar-logo">Moodboard Studio</span>
   <div class="topbar-actions">
+    <a href="README.md" target="_blank" rel="noopener noreferrer" class="topbar-docs">Docs</a>
     <button id="btn-export-png" class="btn" disabled>Export PNG</button>
     <button id="btn-export-pdf" class="btn btn-primary" disabled>Export PDF</button>
   </div>
