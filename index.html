@@ -990,13 +990,19 @@ function renderProductCard(product) {
   const imgWrap = document.createElement('div');
   imgWrap.className = 'card-image-wrap';
   const img = document.createElement('img');
-  img.crossOrigin = 'anonymous'; // must precede src
+  img.crossOrigin = 'anonymous'; // must precede src; needed for canvas export
   img.alt = String(product.name || '');
   img.onerror = () => {
-    if (imgWrap.contains(img)) imgWrap.removeChild(img);
-    const ph = document.createElement('div');
-    ph.className = 'image-placeholder'; ph.textContent = 'Image unavailable';
-    imgWrap.appendChild(ph);
+    // CORS blocked — retry without crossOrigin so the image at least displays
+    // (canvas export will be tainted for this image, but that's acceptable)
+    img.removeAttribute('crossorigin');
+    img.onerror = () => {
+      if (imgWrap.contains(img)) imgWrap.removeChild(img);
+      const ph = document.createElement('div');
+      ph.className = 'image-placeholder'; ph.textContent = 'Image unavailable';
+      imgWrap.appendChild(ph);
+    };
+    img.src = String(product.image_url || '');
   };
   img.src = String(product.image_url || '');
   imgWrap.appendChild(img);

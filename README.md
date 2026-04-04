@@ -58,7 +58,7 @@ The app expects a JSON array where each object represents one product.
 |---|---|---|---|
 | `category` | string | yes | Groups products into sections on the board. All products sharing the same category appear together under a heading. Case-sensitive — `"Sofas"` and `"SOFAS"` are treated as separate categories. |
 | `tier` | string | no | Optional budget or quality tier (e.g. `High-end`, `Mid-range`, `Budget`). Displayed as a small label on the card and available as a filter. Leave as `""` if not applicable. |
-| `name` | string | yes | Product name displayed on the card, in serif type. |
+| `name` | string | yes | Product name displayed on the card, in serif type. Optionally include a designer credit using the format `"Product Name · Designer Name"` — the part after ` · ` is rendered as a secondary line below the name. |
 | `url` | string | yes | Product page URL. Shown as a "View product →" link on the card, opens in a new tab. |
 | `image_url` | string | yes | Direct URL to the product image (not the product page). Must point to the image file itself (`.jpg`, `.webp`, `.png`, etc). If the URL is empty or the image fails to load, a placeholder is shown automatically. |
 | `dimensions` | string | no | Product dimensions (e.g. `W 220 × D 95 × H 75 cm`). Displayed as a spec row on the card if present. |
