@@ -1181,27 +1181,16 @@ function html2canvasWithTimeout(el, opts) {
   return Promise.race([capture, timeout]);
 }
 
-function canvasToBlobUrl(canvas, type, quality) {
-  return new Promise((resolve, reject) => {
-    canvas.toBlob(blob => {
-      if (!blob) { reject(new Error('toBlob produced no output')); return; }
-      resolve(URL.createObjectURL(blob));
-    }, type, quality);
-  });
-}
-
 async function exportPNG() {
   showOverlay(true);
   setExportEnabled(false);
-  let blobUrl;
   try {
     const board = document.getElementById('board');
     const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
     const canvas = await html2canvasWithTimeout(board, html2canvasOpts(getBoardBg(), { scale }));
-    blobUrl = await canvasToBlobUrl(canvas, 'image/png');
     const a = document.createElement('a');
     a.download = 'moodboard.png';
-    a.href = blobUrl;
+    a.href = canvas.toDataURL('image/png');
     a.click();
   } catch (err) {
     console.error('PNG export failed:', err);
@@ -1209,7 +1198,6 @@ async function exportPNG() {
   } finally {
     showOverlay(false);
     setExportEnabled(true);
-    if (blobUrl) setTimeout(() => URL.revokeObjectURL(blobUrl), 10000);
   }
 }
 
