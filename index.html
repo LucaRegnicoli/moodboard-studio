@@ -1161,33 +1161,61 @@ function getBoardBg() {
 const EXPORT_SCALE = 3;
 const MAX_CANVAS_DIM = 16383; // safe upper limit across all browsers
 const EXPORT_ERR_MSG = 'Export failed. Some images may be blocked by CORS.';
+const EXPORT_TIMEOUT_MS = 30000;
 
 function html2canvasOpts(bg, extra) {
   return Object.assign({
     useCORS: true, allowTaint: true,
     backgroundColor: bg,
     logging: false,
+    imageTimeout: 10000,
     ignoreElements: el => el.id === 'export-overlay'
   }, extra);
 }
 
-function exportPNG() {
+function html2canvasWithTimeout(el, opts) {
+  const capture = html2canvas(el, opts);
+  const timeout = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error('html2canvas timed out')), EXPORT_TIMEOUT_MS)
+  );
+  return Promise.race([capture, timeout]);
+}
+
+function canvasToBlobUrl(canvas, type, quality) {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob(blob => {
+      if (!blob) { reject(new Error('toBlob produced no output')); return; }
+      resolve(URL.createObjectURL(blob));
+    }, type, quality);
+  });
+}
+
+async function exportPNG() {
   showOverlay(true);
-  const board = document.getElementById('board');
-  const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
-  html2canvas(board, html2canvasOpts(getBoardBg(), { scale }))
-    .then(canvas => {
-      const a = document.createElement('a');
-      a.download = 'moodboard.png';
-      a.href = canvas.toDataURL('image/png');
-      a.click();
-    })
-    .catch(err => { console.error('PNG export failed:', err); alert(EXPORT_ERR_MSG); })
-    .finally(() => showOverlay(false));
+  setExportEnabled(false);
+  let blobUrl;
+  try {
+    const board = document.getElementById('board');
+    const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
+    const canvas = await html2canvasWithTimeout(board, html2canvasOpts(getBoardBg(), { scale }));
+    blobUrl = await canvasToBlobUrl(canvas, 'image/png');
+    const a = document.createElement('a');
+    a.download = 'moodboard.png';
+    a.href = blobUrl;
+    a.click();
+  } catch (err) {
+    console.error('PNG export failed:', err);
+    alert(EXPORT_ERR_MSG);
+  } finally {
+    showOverlay(false);
+    setExportEnabled(true);
+    if (blobUrl) setTimeout(() => URL.revokeObjectURL(blobUrl), 10000);
+  }
 }
 
 async function exportPDF() {
   showOverlay(true);
+  setExportEnabled(false);
   try {
     const board  = document.getElementById('board');
     const boardW = board.offsetWidth;
@@ -1211,7 +1239,7 @@ async function exportPDF() {
       const srcH  = Math.min(pageHeightPx, boardH - srcY);
       const destH = srcH * mmPerPx;
 
-      const canvas = await html2canvas(board, html2canvasOpts(bg, {
+      const canvas = await html2canvasWithTimeout(board, html2canvasOpts(bg, {
         scale: EXPORT_SCALE,
         y: srcY, height: srcH
       }));
@@ -1223,9 +1251,10 @@ async function exportPDF() {
     pdf.save('moodboard.pdf');
   } catch(err) {
     console.error('PDF export failed:', err);
-    alert('Export failed. Some images may be blocked by CORS.');
+    alert(EXPORT_ERR_MSG);
   } finally {
     showOverlay(false);
+    setExportEnabled(true);
   }
 }
 
