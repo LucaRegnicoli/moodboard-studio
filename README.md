@@ -33,45 +33,55 @@ To use it: open the app, drag `furnitures.json` onto the upload zone (or click "
 
 ## JSON format
 
-The app expects a JSON array where each object represents one product.
+The file must be a JSON array where each object is one product. Only `category`, `name`, `url`, and `image_url` are required — all other fields are optional and can be omitted or left as `""`.
 
 ```json
 [
   {
-    "category": "Sofas",
-    "tier": "High-end",
-    "name": "Tufty-Time Sofa",
-    "url": "https://www.bebitalia.com/en/tufty-time",
-    "image_url": "https://www.bebitalia.com/media/tufty-time.jpg"
+    "category":   "Sofas",
+    "tier":       "High-end",
+    "name":       "Tufty-Time Sofa · B&B Italia",
+    "url":        "https://www.bebitalia.com/en/tufty-time",
+    "image_url":  "https://www.bebitalia.com/media/tufty-time.jpg",
+    "dimensions": "W 220 × D 95 × H 75 cm",
+    "materials":  "Solid oak frame, linen upholstery",
+    "finishes":   "Natural, Smoked, Lacquered white",
+    "notes":      "12 week lead time. Custom configurations available."
   },
   {
-    "category": "Coffee Tables",
-    "tier": "Mid-range",
-    "name": "Slab Table",
-    "url": "https://www.example.com/slab-table",
-    "image_url": "https://www.example.com/slab-table.jpg"
+    "category":   "Coffee Tables",
+    "tier":       "",
+    "name":       "Slab Table",
+    "url":        "https://www.example.com/slab-table",
+    "image_url":  "https://www.example.com/slab-table.jpg",
+    "dimensions": "",
+    "materials":  "",
+    "finishes":   "",
+    "notes":      ""
   }
 ]
 ```
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `category` | string | yes | Groups products into sections on the board. All products sharing the same category appear together under a heading. Case-sensitive — `"Sofas"` and `"SOFAS"` are treated as separate categories. |
-| `tier` | string | no | Optional budget or quality tier (e.g. `High-end`, `Mid-range`, `Budget`). Displayed as a small label on the card and available as a filter. Leave as `""` if not applicable. |
-| `name` | string | yes | Product name displayed on the card, in serif type. Optionally include a designer credit using the format `"Product Name · Designer Name"` — the part after ` · ` is rendered as a secondary line below the name. |
-| `url` | string | yes | Product page URL. Shown as a "View product →" link on the card, opens in a new tab. |
-| `image_url` | string | yes | Direct URL to the product image (not the product page). Must point to the image file itself (`.jpg`, `.webp`, `.png`, etc). If the URL is empty or the image fails to load, a placeholder is shown automatically. |
-| `dimensions` | string | no | Product dimensions (e.g. `W 220 × D 95 × H 75 cm`). Displayed as a spec row on the card if present. |
-| `materials` | string | no | Primary materials (e.g. `Solid oak, linen upholstery`). Displayed as a spec row on the card if present. |
-| `finishes` | string | no | Available finishes or colour options (e.g. `Natural, Smoked, Lacquered white`). Displayed as a spec row on the card if present. |
-| `notes` | string | no | Free-text notes (e.g. lead time, custom options, pricing notes). Displayed as a spec row on the card if present. |
+### Fields
 
-### Tips for good results
+| Field | Required | Description |
+|---|:---:|---|
+| `category` | ✓ | Groups products into sections. Case-sensitive — `"Sofas"` and `"SOFAS"` are separate groups. |
+| `name` | ✓ | Product name. To add a designer credit, use `"Name · Designer"` — the part after ` · ` renders as a smaller secondary line. |
+| `url` | ✓ | Product page URL, shown as a "View product →" link on the card. |
+| `image_url` | ✓ | Direct URL to the image file (`.jpg`, `.webp`, `.png`). Empty or broken URLs show a placeholder automatically. |
+| `tier` | | Budget or quality label (e.g. `High-end`, `Mid-range`, `Budget`). Shown on the card and available as a sidebar filter. |
+| `dimensions` | | Dimensions string (e.g. `W 220 × D 95 × H 75 cm`). |
+| `materials` | | Primary materials (e.g. `Solid oak, linen upholstery`). |
+| `finishes` | | Available finishes or colour options (e.g. `Natural, Smoked, Lacquered white`). |
+| `notes` | | Free-text notes — lead times, pricing, custom options, etc. |
 
-- **Images**: use direct image URLs, not product page URLs. Right-click an image on a product page and choose "Copy image address" to get the direct URL.
-- **CORS**: images hosted on servers that don't allow cross-origin requests will load in the browser but may appear blank in exported PNG/PDF files. This is a server-side restriction outside the app's control.
-- **Categories**: keep category names consistent across products — they drive the grouping headings on the board.
-- **Order**: products appear in the order they appear in the JSON file, within each category.
+### Tips
+
+- **Image URLs** — use direct image addresses, not product page URLs. Right-click a product image and choose "Copy image address".
+- **CORS** — some image servers block cross-origin requests. Images will display in the browser but may be blank in exported files. This is a server-side restriction the app cannot work around.
+- **Category names** — keep them consistent across products; they drive the section headings and filters.
+- **Order** — products appear in the order listed in the file, within each category.
 
 ---
 
