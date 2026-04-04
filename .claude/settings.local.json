@@ -8,7 +8,21 @@
       "Bash(git pull:*)",
       "Bash(git push:*)",
       "Bash(git branch:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(ls *.json)",
+      "Bash(node test-export.js)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx playwright:*)",
+      "Bash(node -e \"const {chromium} = require\\('@playwright/test'\\); console.log\\('found @playwright/test'\\)\")",
+      "Bash(npm list:*)",
+      "Bash(npm root:*)",
+      "Read(//c/GH/LR/moodboard-studio/$\\(npm root -g\\)/**)",
+      "Bash(npx --package playwright node -e \"const {chromium}=require\\('playwright'\\);console.log\\('ok'\\)\")",
+      "Bash(npm install:*)",
+      "Bash(rm:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(rm -rf node_modules package.json package-lock.json)"
     ]
   }
 }
