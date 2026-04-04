@@ -22,7 +22,9 @@
       "Bash(npm install:*)",
       "Bash(rm:*)",
       "Bash(npm uninstall:*)",
-      "Bash(rm -rf node_modules package.json package-lock.json)"
+      "Bash(rm -rf node_modules package.json package-lock.json)",
+      "Bash(npm init:*)",
+      "Bash(rm test-export.js debug-page1.jpg)"
     ]
   }
 }
