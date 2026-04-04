@@ -264,6 +264,128 @@ class TestCategoryFilter:
         assert count == 4
 
 
+class TestCategorySelectAll:
+    """Select-all / Deselect-all toggle for the Categories filter group."""
+
+    def _toggle_btn(self, page: Page):
+        return page.locator("#filter-categories .filter-toggle-all")
+
+    def test_toggle_button_present(self, page: Page):
+        assert self._toggle_btn(page).count() == 1
+
+    def test_initial_label_is_deselect_all(self, page: Page):
+        # All checked by default → button should read "Deselect all"
+        assert "deselect" in self._toggle_btn(page).inner_text().lower()
+
+    def test_deselect_all_unchecks_every_checkbox(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(200)
+        all_unchecked = page.evaluate("""
+            Array.from(document.querySelectorAll('#filter-categories input[type="checkbox"]'))
+                 .every(cb => !cb.checked)
+        """)
+        assert all_unchecked
+
+    def test_deselect_all_shows_no_match_message(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(200)
+        assert "No products match" in page.locator("#board").inner_text()
+
+    def test_label_changes_to_select_all_after_deselect(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(100)
+        assert "select all" in self._toggle_btn(page).inner_text().lower()
+        assert "deselect" not in self._toggle_btn(page).inner_text().lower()
+
+    def test_select_all_rechecks_every_checkbox(self, page: Page):
+        self._toggle_btn(page).click()   # deselect all
+        page.wait_for_timeout(100)
+        self._toggle_btn(page).click()   # select all
+        page.wait_for_timeout(200)
+        all_checked = page.evaluate("""
+            Array.from(document.querySelectorAll('#filter-categories input[type="checkbox"]'))
+                 .every(cb => cb.checked)
+        """)
+        assert all_checked
+
+    def test_select_all_restores_all_products(self, page: Page):
+        self._toggle_btn(page).click()   # deselect all
+        page.wait_for_timeout(100)
+        self._toggle_btn(page).click()   # select all
+        page.wait_for_timeout(200)
+        assert page.locator(".product-card").count() == 10
+
+    def test_label_returns_to_deselect_all_after_reselect(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(100)
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(100)
+        assert "deselect" in self._toggle_btn(page).inner_text().lower()
+
+    def test_manually_unchecking_one_flips_label_to_select_all(self, page: Page):
+        # Uncheck a single checkbox — not all are checked → label should flip
+        page.locator("#filter-categories input[type='checkbox']").first.uncheck()
+        page.wait_for_timeout(100)
+        assert "select all" in self._toggle_btn(page).inner_text().lower()
+
+    def test_manually_rechecking_all_flips_label_to_deselect_all(self, page: Page):
+        page.locator("#filter-categories input[type='checkbox']").first.uncheck()
+        page.wait_for_timeout(100)
+        page.locator("#filter-categories input[type='checkbox']").first.check()
+        page.wait_for_timeout(100)
+        assert "deselect" in self._toggle_btn(page).inner_text().lower()
+
+
+class TestTierSelectAll:
+    """Select-all / Deselect-all toggle for the Tiers filter group."""
+
+    def _toggle_btn(self, page: Page):
+        return page.locator("#filter-tiers .filter-toggle-all")
+
+    def test_toggle_button_present(self, page: Page):
+        assert self._toggle_btn(page).count() == 1
+
+    def test_initial_label_is_deselect_all(self, page: Page):
+        assert "deselect" in self._toggle_btn(page).inner_text().lower()
+
+    def test_deselect_all_unchecks_every_checkbox(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(200)
+        all_unchecked = page.evaluate("""
+            Array.from(document.querySelectorAll('#filter-tiers input[type="checkbox"]'))
+                 .every(cb => !cb.checked)
+        """)
+        assert all_unchecked
+
+    def test_deselect_all_shows_no_match_message(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(200)
+        assert "No products match" in page.locator("#board").inner_text()
+
+    def test_label_changes_to_select_all_after_deselect(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(100)
+        assert "select all" in self._toggle_btn(page).inner_text().lower()
+
+    def test_select_all_restores_all_products(self, page: Page):
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(100)
+        self._toggle_btn(page).click()
+        page.wait_for_timeout(200)
+        assert page.locator(".product-card").count() == 10
+
+    def test_manually_unchecking_one_flips_label(self, page: Page):
+        page.locator("#filter-tiers input[type='checkbox']").first.uncheck()
+        page.wait_for_timeout(100)
+        assert "select all" in self._toggle_btn(page).inner_text().lower()
+
+    def test_combined_deselect_all_both_groups(self, page: Page):
+        page.locator("#filter-categories .filter-toggle-all").click()
+        page.locator("#filter-tiers .filter-toggle-all").click()
+        page.wait_for_timeout(200)
+        assert "No products match" in page.locator("#board").inner_text()
+
+
 class TestTierFilter:
 
     def test_all_tiers_shown_by_default(self, page: Page):
