@@ -1151,7 +1151,8 @@ function captureBoard() {
   return html2canvas(document.getElementById('board'), {
     useCORS: true, allowTaint: false,
     backgroundColor: getBoardBg(),
-    scale: 3, logging: false
+    scale: 3, logging: false,
+    ignoreElements: el => el.id === 'export-overlay'
   });
 }
 
