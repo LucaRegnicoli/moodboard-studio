@@ -61,6 +61,10 @@ The app expects a JSON array where each object represents one product.
 | `name` | string | yes | Product name displayed on the card, in serif type. |
 | `url` | string | yes | Product page URL. Shown as a "View product →" link on the card, opens in a new tab. |
 | `image_url` | string | yes | Direct URL to the product image (not the product page). Must point to the image file itself (`.jpg`, `.webp`, `.png`, etc). If the URL is empty or the image fails to load, a placeholder is shown automatically. |
+| `dimensions` | string | no | Product dimensions (e.g. `W 220 × D 95 × H 75 cm`). Displayed as a spec row on the card if present. |
+| `materials` | string | no | Primary materials (e.g. `Solid oak, linen upholstery`). Displayed as a spec row on the card if present. |
+| `finishes` | string | no | Available finishes or colour options (e.g. `Natural, Smoked, Lacquered white`). Displayed as a spec row on the card if present. |
+| `notes` | string | no | Free-text notes (e.g. lead time, custom options, pricing notes). Displayed as a spec row on the card if present. |
 
 ### Tips for good results
 

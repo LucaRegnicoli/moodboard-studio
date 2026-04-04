@@ -2,701 +2,1101 @@
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Sofa Modulable · Pierre Augustin Rose",
+    "name": "Sofa Modulable",
     "url": "https://pierreaugustinrose.com/products/module-droit",
-    "image_url": "http://pierreaugustinrose.com/cdn/shop/files/sku_SFMOD105_default_image_1.jpg?v=1751904266"
+    "image_url": "http://pierreaugustinrose.com/cdn/shop/files/sku_SFMOD105_default_image_1.jpg?v=1751904266",
+    "dimensions": "L 100 x P 120 x H 85 cm(Hauteur d'assise: 40 cm)",
+    "materials": "",
+    "finishes": "",
+    "notes": "L 100 x P 120 x H 85 cm(Hauteur d'assise: 40 cm)"
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Camaleonda Sofa · Mario Bellini for B&B Italia",
+    "name": "Camaleonda Sofa",
     "url": "https://www.bebitalia.com/en-us/en-us-camaleonda-divani.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "Details: cache-lhr-egll1980042-LHR 1775306630 2264295761"
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Piaf Bézier Sofa · ddc",
+    "name": "Piaf Bézier Sofa",
     "url": "https://ddcnyc.com/collections/sofas/products/piaf-bezier-sofa",
-    "image_url": "https://www.ddcnyc.com/wp-content/uploads/2021/10/Shop_page_006.jpg"
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Dylan Small Sofa · ddc",
+    "name": "Dylan Small Sofa",
     "url": "https://ddcnyc.com/collections/sofas/products/dylan-small-sofa",
-    "image_url": "https://www.ddcnyc.com/wp-content/uploads/2021/10/Shop_page_006.jpg"
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Cleo Sofa · Studio Twenty Seven",
+    "name": "Cleo Sofa",
     "url": "https://studiotwentyseven.com/furniture/cleo-sofa/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Iliade Curved Sofa · Vincent Mazenauer for Studio Twenty Seven",
+    "name": "Iliade Curved Sofa",
     "url": "https://studiotwentyseven.com/furniture/iliade-curved-sofa-by-vincent-mazenauer/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/03/STUDIOTWENTYSEVEN_Iliade-Curved-Sofa_Vincent-Mazenauer.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/03/STUDIOTWENTYSEVEN_Iliade-Curved-Sofa_Vincent-Mazenauer.webp",
+    "dimensions": "W 360 × D 185 × H 80 cm (seat H 40 cm)",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 20 Signed, Serial Number And Certificate Of Authenticity Iliade Collection Year 2026",
+    "finishes": "UPHOLSTERED IN MANADE BY MISIA WALNUT FRAME IN H / CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE",
+    "notes": "Craftsmanship is at the heart of Iliade, merging ancestral techniques with technological innovation to create objects that are both timeless and avant-garde. The exclusivity of the collection is reinforced by its rarity, with many pieces produced in highly limited series or as singular works. These works do not merely reference antiquity; they propose a reimagining of its legacy, inviting a dialog"
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Ampleur Sofa · Maxime Boutillier for Studio Twenty Seven",
+    "name": "Ampleur Sofa",
     "url": "https://studiotwentyseven.com/furniture/ampleur-sofa-by-maxime-boutillier/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Almpleur-Sofa_Maxime-Boutillier.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Almpleur-Sofa_Maxime-Boutillier.webp",
+    "dimensions": "W 200 × D 80 × H 77.5 cm (seat H 42.5 cm)",
+    "materials": "Exclusively For Studiotwentyseven Numbered Edition Signed, Serial Number And Certificate Of Authenticity Voltige Collection Year 2025 Upholstered In Ivory Taiga By Nobilis Ampleur 230 Sofa",
+    "finishes": "UPHOLSTERED IN IVORY TAIGA BY NOBILIS AMPLEUR",
+    "notes": "His aesthetic vocabulary is defined by a relentless pursuit of essence, sobriety, and restraint. Yet Boutillier understands that theatricality and gesture can coexist with simplicity. In each creation, the study of proportion is paramount: every line and every curve is considered with precision, resulting in silhouettes that are both elegant and sensuous. His purity of form and meticulous craftsma"
   },
   {
     "category": "SOFAS",
     "tier": "",
-    "name": "Verneuil Modular Sofa · Charles Kalpakian for Studio Twenty Seven",
+    "name": "Verneuil Modular Sofa",
     "url": "https://studiotwentyseven.com/furniture/verneuil-modular-sofa-by-charles-kalpakian/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_Verneuil-Sofa_David-Haymann.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_Verneuil-Sofa_David-Haymann.jpg",
+    "dimensions": "W 420 × D 97 × H 80 cm (seat H 43 cm)",
+    "materials": "Les Choses De La Vie Collection Year 2024",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST MADE IN ITALY",
+    "notes": "Made in Italy"
   },
   {
     "category": "BEDS",
     "tier": "",
-    "name": "Peg Bed · Cappellini",
+    "name": "Peg Bed",
     "url": "https://www.miliashop.com/en/beds/6588-peg-bed-cappellini.html",
-    "image_url": "https://www.miliashop.com/34504-large_default/peg-bed-cappellini.jpg"
+    "image_url": "https://www.miliashop.com/34504-large_default/peg-bed-cappellini.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "Peg Bed designed by Nendo for Cappellini is a bed made with metal and wood structure, slatted base and padded headboard. Fixed upholstery in fabric or leather. Available in different finishes and dimensions."
   },
   {
     "category": "BEDS",
     "tier": "",
-    "name": "Coupé Bed · Poltrona Frau",
+    "name": "Coupé Bed",
     "url": "https://www.poltronafrau.com/gb/en/products/coupe-bed.html",
-    "image_url": "https://www.poltronafrau.com/content/dam/ld/poltronafrau/products/c/o/u/coupe-bed/14_plp/coupe-bed.jpg"
+    "image_url": "https://www.poltronafrau.com/content/dam/ld/poltronafrau/products/c/o/u/coupe-bed/14_plp/coupe-bed.jpg",
+    "dimensions": "160x200cm / 170x200cm / 180x200cm / Queen size 153x203cm / King size 193x203cm",
+    "materials": "",
+    "finishes": "metal steel feet",
+    "notes": "The contemporary design, defined by soft lines and tailored details, makes the Coupé bed the undisputed focal point of modern master bedrooms, luxury hotel suites, and high-profile interior design projects. The possibility to customize the upholstery—choosing from Frau® leather in a wide range of colors or from the finest fabrics—allows the bed to adapt to different color palettes, from neutral to"
   },
   {
     "category": "BEDS",
     "tier": "",
-    "name": "Samba 3 Bed · Emmanuelle Simon for Studio Twenty Seven",
+    "name": "Samba 3 Bed",
     "url": "https://studiotwentyseven.com/furniture/samba-3-bed-by-emmanuelle-simon/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-3-Bed_Emmanuelle-Simon.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-3-Bed_Emmanuelle-Simon.jpg",
+    "dimensions": "W 310 × D 210 × H 90 cm (seat H 29 cm)",
+    "materials": "Solid Brushed Oak Frame Grasscloth Headboard Samba 3 Bed 310",
+    "finishes": "",
+    "notes": "A French-Israeli architect and designer, Simon composes immaculately curated, resolutely modernist pieces that reflect her heightened sense of refinement, keen eye for detail, and passion for craftsmanship. Drawing on Art Deco style and Wabi-Sabi philosophy, she exposes the raw beauty of materials with her precise, sophisticated, and simple designs. With a singularly detail-oriented aesthetic, Sim"
   },
   {
     "category": "BEDS",
     "tier": "",
-    "name": "Samba 1 Bed · Emmanuelle Simon for Studio Twenty Seven",
+    "name": "Samba 1 Bed",
     "url": "https://studiotwentyseven.com/furniture/samba-1-bed-by-emmanuelle-simon/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-1-Bed_Emmanuelle-Simon.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/08/STUDIOTWENTYSEVEN_Samba-1-Bed_Emmanuelle-Simon.jpg",
+    "dimensions": "W 346 × D 210 × H 88 cm (seat H 28 cm)",
+    "materials": "Solid Brushed Oak Frame Grasscloth Headboard Paneling Samba 1 Bed 346",
+    "finishes": "",
+    "notes": "A French-Israeli architect and designer, Simon composes immaculately curated, resolutely modernist pieces that reflect her heightened sense of refinement, keen eye for detail, and passion for craftsmanship. Drawing on Art Deco style and Wabi-Sabi philosophy, she exposes the raw beauty of materials with her precise, sophisticated, and simple designs. With a singularly detail-oriented aesthetic, Sim"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "TT1SE.01F Sideboard · Sattio Studio for Studio Twenty Seven",
+    "name": "TT1SE.01F Sideboard",
     "url": "https://studiotwentyseven.com/furniture/tt1se-01f-sideboard-by-sattio-studio/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.01F-Sideboard_Sattio-Studio.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.01F-Sideboard_Sattio-Studio.jpg",
+    "dimensions": "W 270 × D 57.7 × H 86 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 50 Signed, Serial Number And Certificate Of Authenticity Tt1 Collection Year 2024",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE BY ATELIERS SAINT-JACQUES",
+    "notes": "A french design studio, Sattio creates contemporary sculptural works that combine a convivial minimalist aesthetic, resolute functionalism, and heritage French craftsmanship. Their architectural sculptures have a streamlined, elemental quality that emanates warmth, passion, and an appreciation for the simple joys of life. Exquisite finishes like lacquer, leather, and onyx create a delicate counter"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Bellagio Sideboard · Sauro Melchiorri for Studio Twenty Seven",
+    "name": "Bellagio Sideboard",
     "url": "https://studiotwentyseven.com/furniture/bellagio-sideboard-by-sauro-melchiorri/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Sideboard-Breccia-Aurora_Sauro-Melchiorri.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Sideboard-Breccia-Aurora_Sauro-Melchiorri.jpg",
+    "dimensions": "W 300 × D 55 × H 75 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Bellagio Collection Year 2024 Breccia Blue,",
+    "finishes": "",
+    "notes": "AN ITALIAN designer, MELCHIORRI ingeniously uses PURE MATERIALS to uncover CLEAN AND TIMELESS DESIGNs. He is dedicated to exploring the undiscovered possibilities of material and form to create one-of-a-kind works of audacity, integrity, and intelligence. With a unmatched facility with raw materials, Melchiorri CREATES UNIQUE works that reflect a Sui generis aesthetic vocabulary, a deep understand"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Chameleon Audio Cabinet · Tom Bensari for Studio Twenty Seven",
+    "name": "Chameleon Audio Cabinet",
     "url": "https://studiotwentyseven.com/furniture/chameleon-audio-cabinet-by-tom-bensari/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/03/STUDIOTWENTYSEVEN_Chameleon-Audio-Cabinet_Tom-Bensari.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/03/STUDIOTWENTYSEVEN_Chameleon-Audio-Cabinet_Tom-Bensari.jpg",
+    "dimensions": "W 200 × D 45 × H 70 cm",
+    "materials": "Exclusively For Studiotwentyseven Numbered Edition Signed, Serial Number And Certificate Of Authenticity Chameleon Collection Year 2021",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN POLAND",
+    "notes": "With a sculptural sensibility, The Chameleon Collection translates the horizontal divisions and rounded bay windows of the store into beautiful, functional lines and organic curvature in these stunning furniture pieces. Fabricated from the finest oak, ash, and luscious American walnut cladding with brass, stone, and gold plated accents, the cabinets are an artistic dialogue between traditional cra"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Pro5 Sideboard · Francesco Balzano for Studio Twenty Seven",
+    "name": "Pro5 Sideboard",
     "url": "https://studiotwentyseven.com/furniture/pro5-sideboard-by-francesco-balzano/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2022/05/STUDIOTWENTYSEVEN_PRO5-Sideboard_Onyx_Oak_Francesco-Balzano.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2022/05/STUDIOTWENTYSEVEN_PRO5-Sideboard_Onyx_Oak_Francesco-Balzano.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "SMOKED EUCALYPTUS CABINET HIGH GLOSS FINISH ON WOOD WITH OR WITHOUT TOP HAND DETAIL IN CONTRASTING STONE 2 DOUBLE CUPBOARDS WITH PIVOTING DOORS WITH ONE INTERNAL SHELF IN",
+    "notes": "Guided by the principle that simplicity is the ultimate sophistication, Balzano’s work combines noble materials, purity of line, and hyper-detailed architectural references with everyday functionality. With a sense of exquisite tension—between classical forms and contemporary ingenuity, serene nature and innovative urbanity, timeliness and timelessness—his work holds an enigmatic complexity within"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Genova Credenza · Stéphane Parmentier for Studio Twenty Seven",
+    "name": "Genova Credenza",
     "url": "https://studiotwentyseven.com/furniture/genova-credenza-by-stephane-parmentier/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Bellagio Horizontal Bookcase · Sauro Melchiorri for Studio Twenty Seven",
+    "name": "Bellagio Horizontal Bookcase",
     "url": "https://studiotwentyseven.com/furniture/bellagio-horizontal-bookcase-by-sauro-melchiorri/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Horizontal-Bookcase-Breccia-Aurora_Sauro-Melchiorri.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Bellagio-Horizontal-Bookcase-Breccia-Aurora_Sauro-Melchiorri.jpg",
+    "dimensions": "W 280 × D 55 × H 75 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Bellagio Collection Year 2024 Breccia Blue,",
+    "finishes": "",
+    "notes": "AN ITALIAN designer, MELCHIORRI ingeniously uses PURE MATERIALS to uncover CLEAN AND TIMELESS DESIGNs. He is dedicated to exploring the undiscovered possibilities of material and form to create one-of-a-kind works of audacity, integrity, and intelligence. With a unmatched facility with raw materials, Melchiorri CREATES UNIQUE works that reflect a Sui generis aesthetic vocabulary, a deep understand"
   },
   {
     "category": "SIDEBOARDS, CREDENZAS & STORAGE",
     "tier": "",
-    "name": "Sideboard · Finn Juhl 1955 for Studio Twenty Seven",
+    "name": "Sideboard",
     "url": "https://studiotwentyseven.com/furniture/sideboard-by-finn-juhl-1955/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg",
+    "dimensions": "W 69.5\" × D 18.4\" × H 35.2\"",
+    "materials": "Design 1955 Certificate Of Authenticity Sideboard With Or Without Inside Tray Unit Frame In Oak, Walnut, Oregon Pine Or Teak Legs In Brownish Steel With Wooden Feet Doors In Oak, Walnut, Oregon Pine Or Teak Doors In Yellow/White Or Blue/White Tray Unit In Red/Yellow Or Blue/White",
+    "finishes": "",
+    "notes": "After initially pursuing a career as an art historian, Juhl trained as an architect at the Royal Danish Academy of Art. As an interior designer, he created celebrated commissions for the United Nations, Scandinavian Airlines, and Georg Jensen. He also curated over sixty design exhibitions around the world, including exhibits at the Metropolitan Museum of Art and the Victoria & Albert Museum"
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Thin Black Table · Nendo for Cappellini",
+    "name": "Thin Black Table",
     "url": "https://www.cappellini.com/ww/en/products/thin-black-table.html",
-    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/t/h/i/thin-black-table/14_plp/thin-black-table.jpg"
+    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/t/h/i/thin-black-table/14_plp/thin-black-table.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "COLOURS, 04 black",
+    "notes": "Since 2002, under the guidance of architect Oki Sato, the collective of professionals united under the name Nendo has come to represent a cultured and refined alternative to the self-celebratory and self-referential design scene. In fact, the Japanese word, “Nendo”, means “clay” and the work of the studio, spanning from interior design to the world..."
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Gong Coffee Table · Giulio Cappellini for Cappellini",
+    "name": "Gong Coffee Table",
     "url": "https://www.cappellini.com/ww/en/products/gong.html",
-    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/g/o/n/gong/14_plp/gong.jpg"
+    "image_url": "https://www.cappellini.com/content/dam/ld/cappellini/products/g/o/n/gong/14_plp/gong.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "COLOURS, 01 white",
+    "notes": "Trained as an architect in Milan, Giulio Cappellini is an emblematic figure in the international design panorama. Animated by an indomitable spirit and the curiosity of someone who wants to renew himself continuously, Cappellini dedicates himself to design by offering his personal revision of contemporary design, both for the brand that bears..."
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Saarinen Side Table Round · Eero Saarinen for Design Within Reach",
+    "name": "Saarinen Side Table Round",
     "url": "https://www.dwr.com/furniture-tables/saarinen-side-table-round/100113.html",
-    "image_url": "https://images.hermanmiller.group/m/ac3fdf46d14de46c/W-HM_5667_10004690_camel_walnut_v1_002.png?auto=format&mediaId=A6ADCF44-FC26-40FC-B646C5DCDE9164F3&w=1200&rect=.0557%2C.4113%2C.9442%2C.3568"
+    "image_url": "https://images.hermanmiller.group/asset/023f3583-bdc7-4b3e-abd4-92a603ba9f09/W/KNO_2264_100688483_22_oval_polished_emperador_light_white_base_f.png",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Fronzoni 64 Chair · AG Fronzoni for Cappellini",
+    "name": "Fronzoni 64 Chair",
     "url": "https://www.cappellini.com/ww/en/products/fronzoni-64.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness."
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Tabouret Méribel · Charlotte Perriand for Cassina",
+    "name": "Tabouret Méribel",
     "url": "https://www.cassina.com/en/collection/stools/tabouret-meribel.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "It looks like you're browsing from a different country than your current location. For a smoother shopping experience, we recommend updating your location settings."
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Passage II Side Table · John Koga for Ralph Pucci",
+    "name": "Passage II Side Table",
     "url": "https://ralphpucci.com/collection/view/passage-ii/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Catalpa Side Table · Chris Lehrecke for Ralph Pucci",
+    "name": "Catalpa Side Table",
     "url": "https://ralphpucci.com/collection/view/catalpa-side-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_CL-Catalpa-M.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_CL-Catalpa-M.jpg",
+    "dimensions": "20\"D x 16\"H / 20\"D x 18\"H / 20\"D x 20\"H",
+    "materials": "Natural, Bleached or Ebonized Catalpa Wood",
+    "finishes": "",
+    "notes": "Material: Natural, Bleached or Ebonized Catalpa Wood Dimensions: 20&quot;D x 16&quot;H 20&quot;D x 18&quot;H 20&quot;D x 20&quot;H"
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Skye Tables · Chris Lehrecke for Ralph Pucci",
+    "name": "Skye Tables",
     "url": "https://ralphpucci.com/collection/view/skye-tables/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/06/medium_cl_furn_m_135.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/06/medium_cl_furn_m_135.jpg",
+    "dimensions": "",
+    "materials": "Laminated plywood and aluminum",
+    "finishes": "Bleached, natural, dark",
+    "notes": "Description: Laminated plywood and aluminum Wood Finishes: Bleached, natural, dark Metal Finishes: Blackened or natural aluminum Dimensions: contact us for more information"
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Embedded Side Table · Eric Schmitt for Ralph Pucci",
+    "name": "Embedded Side Table",
     "url": "https://ralphpucci.com/collection/view/embedded/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Cabega Side Table Tan · John Wigmore for Ralph Pucci",
+    "name": "Cabega Side Table Tan",
     "url": "https://ralphpucci.com/collection/view/cabega/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/Cabega-1.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/Cabega-1.jpg",
+    "dimensions": "13” Dia  x 18”-20\" H",
+    "materials": "Ceramic Carved Round Side Table",
+    "finishes": "Finish: Tan Glaze",
+    "notes": "Description: Ceramic Carved Round Side Table Finish: Tan Glaze Dimensions: 13” Dia x 18”-20\" H Note: as these tables are all made by hand, dimensions and shape can vary from piece to piece."
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Mycelia 03 Table · Sébastien Léon for Ralph Pucci",
+    "name": "Mycelia 03 Table",
     "url": "https://ralphpucci.com/collection/view/mycelia-03/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "SIDE TABLES",
     "tier": "",
-    "name": "Tavolino Travertino · Xavier Lust for Ralph Pucci",
+    "name": "Tavolino Travertino",
     "url": "https://ralphpucci.com/collection/view/tavolino-travertino/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/02/XL-tavolino-1-MD-1.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/02/XL-tavolino-1-MD-1.jpg",
+    "dimensions": "14.5\" W x 19.5\" D x 16.5″ H",
+    "materials": "Travertine. Available to use Indoor and outdoor.",
+    "finishes": "",
+    "notes": "Description: Travertine. Available to use Indoor and outdoor. Dimensions: 14.5\" W x 19.5\" D x 16.5″ H"
   },
   {
     "category": "STOOLS",
     "tier": "",
-    "name": "Mahalo Bar Stool · John Koga for Ralph Pucci",
+    "name": "Mahalo Bar Stool",
     "url": "https://ralphpucci.com/collection/view/mahalo-lounge-chair/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/John-Koga-Mahalo-Lounge-Chair.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/02/John-Koga-Mahalo-Lounge-Chair.jpg",
+    "dimensions": "36” W x 32.5” D x 37.25” H",
+    "materials": "Plasterglass",
+    "finishes": "",
+    "notes": "Description: Plasterglass Dimensions: 36” W x 32.5” D x 37.25” H Weight: 60 lbs"
   },
   {
     "category": "STOOLS",
     "tier": "",
-    "name": "Bonnet Bar Stool · Broberg & Ridderstråle for Studio Twenty Seven",
+    "name": "Bonnet Bar Stool",
     "url": "https://studiotwentyseven.com/furniture/bonnet-bar-stool-by-broberg-ridderstrale/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2018/10/STUDIOTWENTYSEVEN_Bonnet-Bar-Stool_Broberg-Ridderstråle_Adea.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2018/10/STUDIOTWENTYSEVEN_Bonnet-Bar-Stool_Broberg-Ridderstråle_Adea.jpg",
+    "dimensions": "W 22.8\" × D 22.8\" × H 36.6\" (seat H 26\")",
+    "materials": "",
+    "finishes": "",
+    "notes": "Made in Finland"
   },
   {
     "category": "STOOLS",
     "tier": "",
-    "name": "Balducci Stool · Adam Court for Studio Twenty Seven",
+    "name": "Balducci Stool",
     "url": "https://studiotwentyseven.com/furniture/balducci-stool-by-adam-court/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/02/STUDIOTWENTYSEVN_Balducci-Stool_Adam-Court_Okha.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/02/STUDIOTWENTYSEVN_Balducci-Stool_Adam-Court_Okha.jpg",
+    "dimensions": "W 54 × D 54 × H 98 cm (seat H 76 cm)",
+    "materials": "Frame In Ash,",
+    "finishes": "CUSTOM FINISH ON REQUEST MADE IN PORTUGAL",
+    "notes": "Made in Portugal"
   },
   {
     "category": "COFFEE TABLES",
     "tier": "",
-    "name": "Santorini Coffee Table · Lee F. Mindel for Ralph Pucci",
+    "name": "Santorini Coffee Table",
     "url": "https://ralphpucci.com/collection/view/santorini-coffee-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/10/SANTORINI-COFFEE-TABLE.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/10/SANTORINI-COFFEE-TABLE.jpg",
+    "dimensions": "76\" W x 24\" D x 16.75\" H",
+    "materials": "White Plasterglass with quartz Top",
+    "finishes": "",
+    "notes": "Description: White Plasterglass with quartz Top Dimensions: 76\" W x 24\" D x 16.75\" H Weight: 285 lbs"
   },
   {
     "category": "COFFEE TABLES",
     "tier": "",
-    "name": "Celestial Coffee Table · Patrick Naggar for Ralph Pucci",
+    "name": "Celestial Coffee Table",
     "url": "https://ralphpucci.com/collection/view/celestial-coffee-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/11/Celestial-Coffee-Table.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/11/Celestial-Coffee-Table.jpg",
+    "dimensions": "47.25” Dia x 15.75\" H",
+    "materials": "Three bronze discs with silver plated bronze top",
+    "finishes": "",
+    "notes": "Edition of 25 Description: Three bronze discs with silver plated bronze top Dimensions: 47.25” Dia x 15.75\" H Weight: 200 lbs"
   },
   {
     "category": "COFFEE TABLES",
     "tier": "",
-    "name": "Table Basse Jazzy 609 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Table Basse Jazzy 609",
     "url": "https://ralphpucci.com/collection/view/table-basse-jazzy/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/04/Herve-Van-Der-Straeten-Table-Basse-Jazzy.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/04/Herve-Van-Der-Straeten-Table-Basse-Jazzy.jpg",
+    "dimensions": "48.82\" W x 50.78\" D x 17\" H",
+    "materials": "Bianco Perlino top and patinated bronze legs",
+    "finishes": "",
+    "notes": "Edition of 40 Description: Bianco Perlino top and patinated bronze legs Dimensions: 48.82\" W x 50.78\" D x 17\" H Weight: 385.8 lbs"
   },
   {
     "category": "COFFEE TABLES",
     "tier": "",
-    "name": "Table Basse Labyrinthe 610 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Table Basse Labyrinthe 610",
     "url": "https://ralphpucci.com/collection/view/table-basse-labyrinthe/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Table-Basse-Labyrinthe-610.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Table-Basse-Labyrinthe-610.jpg",
+    "dimensions": "41.73” W x 25.59” D x 19.68” H",
+    "materials": "Parchment top, walnut legs",
+    "finishes": "",
+    "notes": "Edition of 40 Description: Parchment top, walnut legs Dimensions: 41.73” W x 25.59” D x 19.68” H Weight: 97 lbs"
   },
   {
     "category": "COFFEE TABLES",
     "tier": "",
-    "name": "Dee Coffee Table · Paul Mathieu for Ralph Pucci",
+    "name": "Dee Coffee Table",
     "url": "https://ralphpucci.com/collection/view/dee-coffee-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/08/medium_PM-Dee-1-M.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/08/medium_PM-Dee-1-M.jpg",
+    "dimensions": "57.5″ L x 30″ W  x 16″ H",
+    "materials": "",
+    "finishes": "",
+    "notes": "Dee Coffee Table Dimensions: 57.5″ L x 30″ W x 16″ H Also available in: Dimensions: 80\" L x 40\" W x 16\" H"
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Nulla · Davide Groppi",
+    "name": "Nulla",
     "url": "https://www.davidegroppi.com/en/nulla.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "You can freely give, deny, or withdraw your consent at any time by accessing the preferences panel. Denying consent may make related features unavailable."
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Bocci Lighting · Bocci",
+    "name": "Bocci Lighting",
     "url": "https://www.bocci.com/product/28/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "495 Railway St. Vancouver BC V6A 1A7 +1 604 639 5195"
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Atollo Glass Table Lamp · Vico Magistretti for Oluce",
+    "name": "Atollo Glass Table Lamp",
     "url": "https://www.oluce.com/en/table-lamps/atollo.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "Alongside the catalogue products is the Oluce experience in lighting technology and Made in Italy attentiveness, which in turn have given life to the Bespoke Tailoring, the special department dedicated to contract design."
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Bellhop Table Lamp · Edward Barber & Jay Osgerby for Flos",
+    "name": "Bellhop Table Lamp",
     "url": "https://www.flos.com/en-us/products/table-lamps/bellhop",
-    "image_url": ""
+    "image_url": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw98ad8556/homepage/Hero_/LS-1.jpg?sw=20&bgcolor=FFFFFF",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "At Flos, we create new languages of light. For over 60 years, we have merged technology with emotion, and research with poetry. We believe in experimentation and in pushing boundaries. From iconic desk lamps to monumental bespoke projects, every Flos creation is a synthesis of form, function and imagination. Light is our way of enriching daily life while envisioning brighter futures"
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Yuh Table Lamp · GamFratesi for Louis Poulsen",
+    "name": "Yuh Table Lamp",
     "url": "https://www.louispoulsen.com/en-int/collection/table/yuh-table-lamp",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Parentesi Element · Achille Castiglioni & Pio Manzù for Flos",
+    "name": "Parentesi Element",
     "url": "https://www.flos.com/en-us/products/floor-lamps/parentesi",
-    "image_url": ""
+    "image_url": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw98ad8556/homepage/Hero_/LS-1.jpg?sw=20&bgcolor=FFFFFF",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "At Flos, we create new languages of light. For over 60 years, we have merged technology with emotion, and research with poetry. We believe in experimentation and in pushing boundaries. From iconic desk lamps to monumental bespoke projects, every Flos creation is a synthesis of form, function and imagination. Light is our way of enriching daily life while envisioning brighter futures"
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Applique Ruban 442 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Applique Ruban 442",
     "url": "https://ralphpucci.com/collection/view/applique-ruban-442/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Cadenza Chandelier 3 Pendants · Ilkka Suppanen for Ralph Pucci",
+    "name": "Cadenza Chandelier 3 Pendants",
     "url": "https://ralphpucci.com/collection/view/cadenza/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/06/346A9422.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/06/346A9422.jpg",
+    "dimensions": "16\" Dia x 21.25\" H, customizable drop",
+    "materials": "Hand-blown glass pendants with metal canopy",
+    "finishes": "",
+    "notes": "Description: Hand-blown glass pendants with metal canopy Dimensions: 16\" Dia x 21.25\" H, customizable drop Weight: 20 lbs Lighting: T10 60W Equivalent Bulb (Qty 3) UL Listed"
   },
   {
     "category": "LIGHTING",
     "tier": "",
-    "name": "Aria Chandelier 6 Arms · Paul Mathieu for Ralph Pucci",
+    "name": "Aria Chandelier 6 Arms",
     "url": "https://ralphpucci.com/collection/view/aria/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/medium_Paul-Mathieu-Aria-Arm-Chair-4-M.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/medium_Paul-Mathieu-Aria-Arm-Chair-4-M.jpg",
+    "dimensions": "21.3\" W x 21.3\" D x 27\" H",
+    "materials": "Aluminum, upholstered",
+    "finishes": "",
+    "notes": "Description: Aluminum, upholstered Dimensions: 21.3\" W x 21.3\" D x 27\" H Seat Height: 19\" COM: 1 yard COL: 4 square feet Weight: 48 lbs"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Spacy Console · Andrée Putman for Ralph Pucci",
+    "name": "Spacy Console",
     "url": "https://ralphpucci.com/collection/view/spacy-console/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_AP_consoleNEW_M.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_AP_consoleNEW_M.jpg",
+    "dimensions": "61.75\" W x 20.5\" D x 29.5\" H",
+    "materials": "Wood and steel",
+    "finishes": "Finish: French oak (whitewash, natural, or stained)",
+    "notes": "Edition of 99 Description: Wood and steel Finish: French oak (whitewash, natural, or stained) Drawer: High polished stainless steel. Dimensions: 61.75\" W x 20.5\" D x 29.5\" H"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Console Maillon 461 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Console Maillon 461",
     "url": "https://ralphpucci.com/collection/view/console-maillon-461/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_hvs_furn2014_M_13.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_hvs_furn2014_M_13.jpg",
+    "dimensions": "66.93\" W x 15.35\" D x 32.28\" H",
+    "materials": "Golden-brown and black patinated bronze legs with stone top",
+    "finishes": "",
+    "notes": "Edition of 40 Description: Golden-brown and black patinated bronze legs with stone top Dimensions: 66.93\" W x 15.35\" D x 32.28\" H Weight: 374 lbs"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Eden Roc Console · Stéphane Parmentier for Studio Twenty Seven",
+    "name": "Eden Roc Console",
     "url": "https://studiotwentyseven.com/furniture/eden-roc-console-by-stephane-parmentier/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Eden-Roc-Console_Stephane-Parmentier.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/12/STUDIOTWENTYSEVEN_Eden-Roc-Console_Stephane-Parmentier.webp",
+    "dimensions": "W 142 × D 40 × H 83 cm",
+    "materials": "Year 2022",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST",
+    "notes": ""
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Adagio Console · Arthur Vallin for Studio Twenty Seven",
+    "name": "Adagio Console",
     "url": "https://studiotwentyseven.com/furniture/adagio-console-by-arthur-vallin/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Adagio-Console_Arthur-Vallin.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Adagio-Console_Arthur-Vallin.webp",
+    "dimensions": "W 175.2 × D 39.8 × H 85 cm",
+    "materials": "Limited Edition 6+4 Ap Signed, Serial Number And Certificate Of Authenticity Year 2025",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN PORTUGAL",
+    "notes": ""
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Sculpt Console · Arthur Vallin for Studio Twenty Seven",
+    "name": "Sculpt Console",
     "url": "https://studiotwentyseven.com/furniture/sculpt-console-by-arthur-vallin/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Sculpt-Console_Arthur-Vallin.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Sculpt-Console_Arthur-Vallin.webp",
+    "dimensions": "W 139.7 × D 39.8 × H 85 cm",
+    "materials": "Limited Edition 6+4 Ap Signed, Serial Number And Certificate Of Authenticity Year 2025",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN ITALY",
+    "notes": ""
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Octave Console · Arthur Vallin for Studio Twenty Seven",
+    "name": "Octave Console",
     "url": "https://studiotwentyseven.com/furniture/octave-console-by-arthur-vallin/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Octave-Console_Arthur-Vallin.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/07/STUDIOTWENTYSEVEN_Octave-Console_Arthur-Vallin.webp",
+    "dimensions": "W 139.7 × D 39.8 × H 85 cm",
+    "materials": "Limited Edition 6+4 Ap Signed, Serial Number And Certificate Of Authenticity Year 2025",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN ITALY",
+    "notes": ""
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Yucca Console Oak · Emma Donnersberg for Studio Twenty Seven",
+    "name": "Yucca Console Oak",
     "url": "https://studiotwentyseven.com/furniture/yucca-console-oak-by-emma-donnersberg/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/10/STUDIOTWENTYSEVEN_U-Me-Console-Oak_Emma-Donnersberg.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/10/STUDIOTWENTYSEVEN_U-Me-Console-Oak_Emma-Donnersberg.jpg",
+    "dimensions": "W 135.7 × D 45 × H 90 cm",
+    "materials": "Year 2023",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST MADE IN FRANCE",
+    "notes": "Made in France"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Positano Console · Sauro Melchiorri for Studio Twenty Seven",
+    "name": "Positano Console",
     "url": "https://studiotwentyseven.com/furniture/positano-console-by-sauro-melchiorri/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/01/STUDIOTWENTYSEVEN_Positano-Console_Sauro-Melchiorri.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/01/STUDIOTWENTYSEVEN_Positano-Console_Sauro-Melchiorri.jpg",
+    "dimensions": "W 168 × D 43 × H 80 cm",
+    "materials": "Sold Commission Works On Request Exclusively For Studiotwentyseven Unique Work Year 2023",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HAND SCULPTED IN ITALY",
+    "notes": "Melchiorri’s dedication to his craft is evident in the seamless fusion of classical elegance and contemporary innovation, creating works that transcend the boundaries of style, form, and time itself. Italian marble, renowned for its exceptional quality and inherent beauty, adds significance to these sculptures: The material becomes a canvas for Melchiorri’s vision, capturing the essence of the Ama"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Memento Mori Console · Boldizar Senteski for Studio Twenty Seven",
+    "name": "Memento Mori Console",
     "url": "https://studiotwentyseven.com/furniture/memento-mori-console-by-boldizar-senteski/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/01/STUDIOTWENTYSEVEN_Memento-Mori-Console_Boldizar-Senteski.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2023/01/STUDIOTWENTYSEVEN_Memento-Mori-Console_Boldizar-Senteski.jpg",
+    "dimensions": "W 180 × D 45 × H 75 cm",
+    "materials": "Limited Edition 5 Signed, Serial Number And Certificate Of Authenticity Memento Mori Collection Year 2022",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST MADE IN HUNGARY EDITION NUMBER 2/5 AVAILABLE AS SHOWN IN THE IMAGES",
+    "notes": "A Hungarian object and furniture designer, Senteski celebrates the tension between past and future, decay and renewal, intentional and instinctive. Senteski is deeply influenced by the eclectic environment of Budapest, his hometown, where post-Soviet Brutalism blends with the opulence of Baroque, Neoclassical, and Art Nouveau masterworks. Senteski creates his unique and limited edition collectible"
   },
   {
     "category": "CONSOLES",
     "tier": "",
-    "name": "Trani Console Large · Stéphane Parmentier for Studio Twenty Seven",
+    "name": "Trani Console Large",
     "url": "https://studiotwentyseven.com/furniture/trani-console-large-by-stephane-parmentier/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/01/SUTDIOTWENTYSEVEN_Trani-Console-Large_Stéphane-Parmentier.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2021/01/SUTDIOTWENTYSEVEN_Trani-Console-Large_Stéphane-Parmentier.jpg",
+    "dimensions": "W 100 × D 40 × H 85 cm",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "DESKS",
     "tier": "",
-    "name": "LS40 Desk · Luca Stefano for Studio Twenty Seven",
+    "name": "LS40 Desk",
     "url": "https://studiotwentyseven.com/furniture/ls40-desk-by-luca-stefano/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/02/STUDIOTWENTYSEVEN_LS40-Desk_Luca-Stefano.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2026/02/STUDIOTWENTYSEVEN_LS40-Desk_Luca-Stefano.webp",
+    "dimensions": "W 320 × D 137 × H 75 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Belvedere Collection Year 2026",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN ITALY",
+    "notes": "The Belvedere Collection proposes furniture as a sculptural mountain topography that is imposing yet weightless, monumental yet elusive, austere yet stirring. Comprised of a dining table, coffee table, console, and desk, the collection stands as a tribute to the Alps, evoking their vast scale, silence, and elemental force. In each work, Stefano distills the quiet majesty of the alpine landscape, i"
   },
   {
     "category": "DESKS",
     "tier": "",
-    "name": "LS34 Desk · Luca Stefano for Studio Twenty Seven",
+    "name": "LS34 Desk",
     "url": "https://studiotwentyseven.com/furniture/ls34-desk-by-luca-stefano/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Tokyo Bench with Cushions · Charlotte Perriand for Cassina",
+    "name": "Tokyo Bench with Cushions",
     "url": "https://www.1stdibs.com/furniture/seating/benches/charlotte-perriand-tokyo-bench-cushions-cassina/id-f_25630309/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Classic Daybed · Chris Lehrecke for Ralph Pucci",
+    "name": "Classic Daybed",
     "url": "https://ralphpucci.com/collection/view/chris-lehrecke-collection-day-bed-2/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/10/Chris-Lehrecke-Classic-Daybed.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/10/Chris-Lehrecke-Classic-Daybed.jpg",
+    "dimensions": "80\" W x 32\" D x 28\" H",
+    "materials": "Wood and Upholstery",
+    "finishes": "",
+    "notes": "Description: Wood and Upholstery Dimensions: 80\" W x 32\" D x 28\" H Wood finish: Walnut, oiled or ebonized; Mahogany, brown stain or ebonized: Cherry, oiled; White oak, oiled COM: 9 yards for cushion, 2 yards for bolsters"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Banquette Lazy 611 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Banquette Lazy 611",
     "url": "https://ralphpucci.com/collection/view/banquette-lazy-611/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Banquette-Lazy-611.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/Herve-Van-Der-Straeten-Banquette-Lazy-611.jpg",
+    "dimensions": "57.09” W x 19.68” D x 17.32” H",
+    "materials": "Upholstery, Golden-brown bronze patina",
+    "finishes": "",
+    "notes": "Edition of 40 Description: Upholstery, Golden-brown bronze patina Dimensions: 57.09” W x 19.68” D x 17.32” H Weight: 165.3 lbs"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Rialto Bench · Lee F. Mindel for Ralph Pucci",
+    "name": "Rialto Bench",
     "url": "https://ralphpucci.com/collection/view/rialto-bench/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/07/Lee-F-Mindel-Rialto-Bench.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/07/Lee-F-Mindel-Rialto-Bench.jpg",
+    "dimensions": "73.5\" L x 17.75\" W x 17.25\" H",
+    "materials": "Plasterglass",
+    "finishes": "",
+    "notes": "Description: Plasterglass Dimensions: 73.5\" L x 17.75\" W x 17.25\" H Weight: 175 lbs"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "QU3 Bench · Francesco Balzano for Studio Twenty Seven",
+    "name": "QU3 Bench",
     "url": "https://studiotwentyseven.com/furniture/qu3-bench-by-francesco-balzano/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/11/STUDIOTWENTYSEVEN_QU3-Bench_Francesco-Balzano.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/11/STUDIOTWENTYSEVEN_QU3-Bench_Francesco-Balzano.webp",
+    "dimensions": "W 300 × D 40 × H 40 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Quattrocento Collection Year 2025",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE BY ATELIERS SAINT-JACQUES",
+    "notes": "Guided by the principle that simplicity is the ultimate sophistication, Balzano’s work combines noble materials, purity of line, and hyper-detailed architectural references with everyday functionality. With a sense of exquisite tension—between classical forms and contemporary ingenuity, serene nature and innovative urbanity, timeliness and timelessness—his work holds an enigmatic complexity within"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "TT1SE.06F Bench · Sattio Studio for Studio Twenty Seven",
+    "name": "TT1SE.06F Bench",
     "url": "https://studiotwentyseven.com/furniture/tt1se-06f-bench-by-sattio-studio/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.06F-Bench_Sattio-Studio.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_TT1SE.06F-Bench_Sattio-Studio.jpg",
+    "dimensions": "W 250 × D 52.5 × H 45 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 50 Signed, Serial Number And Certificate Of Authenticity Tt1 Collection Year 2024",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE BY ATELIERS SAINT-JACQUES",
+    "notes": "A french design studio, Sattio creates contemporary sculptural works that combine a convivial minimalist aesthetic, resolute functionalism, and heritage French craftsmanship. Their architectural sculptures have a streamlined, elemental quality that emanates warmth, passion, and an appreciation for the simple joys of life. Exquisite finishes like lacquer, leather, and onyx create a delicate counter"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "LS11 Bench · Luca Stefano for Studio Twenty Seven",
+    "name": "LS11 Bench",
     "url": "https://studiotwentyseven.com/furniture/ls11-bench-by-luca-stefano/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2020/05/STUDIOTWENTYSEVEN_LS11-Bench_Luca-Stefano.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2020/05/STUDIOTWENTYSEVEN_LS11-Bench_Luca-Stefano.jpg",
+    "dimensions": "W 320 × D 40 × H 44 cm",
+    "materials": "",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN ITALY",
+    "notes": "After graduating from the Politecnico Di Milano with Honors, Stefano developed his artistic sensibility and style at prestigious interior design firms. In 2020 he founded his studio to create custom and limited edition pieces for art and design collectors"
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Nomad Bench with Side Tables · Emmanuelle Simon for Studio Twenty Seven",
+    "name": "Nomad Bench with Side Tables",
     "url": "https://studiotwentyseven.com/furniture/nomad-bench-with-side-tables-by-emmanuelle-simon/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "BENCHES, DAYBEDS & OTTOMANS",
     "tier": "",
-    "name": "Nomad Daybed · Emmanuelle Simon for Studio Twenty Seven",
+    "name": "Nomad Daybed",
     "url": "https://studiotwentyseven.com/furniture/nomad-daybed-by-emmanuelle-simon/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2016/12/STUDIOTWENTYSEVEN_Nomad-Daybed_Emmanuelle-Simon.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2016/12/STUDIOTWENTYSEVEN_Nomad-Daybed_Emmanuelle-Simon.jpg",
+    "dimensions": "W 240 × D 93 × H 40 cm",
+    "materials": "",
+    "finishes": "",
+    "notes": "A French-Israeli architect and designer, Simon composes immaculately curated, resolutely modernist pieces that reflect her heightened sense of refinement, keen eye for detail, and passion for craftsmanship. Drawing on Art Deco style and Wabi-Sabi philosophy, she exposes the raw beauty of materials with her precise, sophisticated, and simple designs. With a singularly detail-oriented aesthetic, Sim"
   },
   {
     "category": "SHELVING & BOOKCASES",
     "tier": "",
-    "name": "FI03 Bookcase · Francesco Balzano for Studio Twenty Seven",
+    "name": "FI03 Bookcase",
     "url": "https://studiotwentyseven.com/furniture/fi03-bookcase-by-francesco-balzano/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_FI03-Bookcase_Francesco-Balzano.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/10/STUDIOTWENTYSEVEN_FI03-Bookcase_Francesco-Balzano.jpg",
+    "dimensions": "",
+    "materials": "Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Fiori Collection Year 2024",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE BY ATELIERS SAINT-JACQUES",
+    "notes": "Guided by the principle that simplicity is the ultimate sophistication, Balzano’s work combines noble materials, purity of line, and hyper-detailed architectural references with everyday functionality. With a sense of exquisite tension—between classical forms and contemporary ingenuity, serene nature and innovative urbanity, timeliness and timelessness—his work holds an enigmatic complexity within"
   },
   {
     "category": "SHELVING & BOOKCASES",
     "tier": "",
-    "name": "Panel System · Finn Juhl 1953 for Studio Twenty Seven",
+    "name": "Panel System",
     "url": "https://studiotwentyseven.com/furniture/panel-system-by-finn-juhl-1953/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/12/STUDIOTWENTYSEVEN_Panel-System_Finn-Juhl-1953.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/12/STUDIOTWENTYSEVEN_Panel-System_Finn-Juhl-1953.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "After initially pursuing a career as an art historian, Juhl trained as an architect at the Royal Danish Academy of Art. As an interior designer, he created celebrated commissions for the United Nations, Scandinavian Airlines, and Georg Jensen. He also curated over sixty design exhibitions around the world, including exhibits at the Metropolitan Museum of Art and the Victoria & Albert Museum"
   },
   {
     "category": "SHELVING & BOOKCASES",
     "tier": "",
-    "name": "Loico Shelving · Angelo Mangiarotti 1987 for Studio Twenty Seven",
+    "name": "Loico Shelving",
     "url": "https://studiotwentyseven.com/furniture/loico-shelving-by-angelo-mangiarotti-1987/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/10/STUDIOTWENTYSEVEN_Loico-Shelving_Angelo-Mangiarotti-1987_AgapeCasa-1.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/10/STUDIOTWENTYSEVEN_Loico-Shelving_Angelo-Mangiarotti-1987_AgapeCasa-1.jpg",
+    "dimensions": "W 238.7 × D 35 × H 75 cm",
+    "materials": "Signed, Serial Number And Certificate Of Authenticity White Carrara, Gray Carnico, Black Marquina, Green Alpi Or Dark Emperador Marble Shelves Underside Coated In Carbon Fiber Single 75, 2",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "ARMCHAIRS",
     "tier": "",
-    "name": "Bélier Lounge Chair · Maxime Boutillier for Studio Twenty Seven",
+    "name": "Bélier Lounge Chair",
     "url": "https://studiotwentyseven.com/furniture/belier-lounge-chair-by-maxime-boutillier/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/12/STUDIOTWENTYSEVEN_Belier-Lounge-Chair_Maxime-Boutillier.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2024/12/STUDIOTWENTYSEVEN_Belier-Lounge-Chair_Maxime-Boutillier.jpg",
+    "dimensions": "W 88.5 × D 89.5 × H 79 cm (seat H 42 cm)",
+    "materials": "Exclusively For Studiotwentyseven Numbered Edition Signed, Serial Number And Certificate Of Authenticity Bergerie Collection Year 2024",
+    "finishes": "UPHOLSTERED IN IVORY TAIGA BY NOBILIS MATTE BLACK BRUSHED OAK FRAME IN H / CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE",
+    "notes": "His aesthetic vocabulary is defined by a relentless pursuit of essence, sobriety, and restraint. Yet Boutillier understands that theatricality and gesture can coexist with simplicity. In each creation, the study of proportion is paramount: every line and every curve is considered with precision, resulting in silhouettes that are both elegant and sensuous. His purity of form and meticulous craftsma"
   },
   {
     "category": "ARMCHAIRS",
     "tier": "",
-    "name": "Franck Armchair · Charles Kalpakian for Studio Twenty Seven",
+    "name": "Franck Armchair",
     "url": "https://studiotwentyseven.com/furniture/franck-armchair-by-charles-kalpakian/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/11/STUDIOTWENTYSEVEN_Franck-Easy-Chair_Charles-Kalpakian_Haymann.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/11/STUDIOTWENTYSEVEN_Franck-Easy-Chair_Charles-Kalpakian_Haymann.jpg",
+    "dimensions": "W 26.2\" × D 35.2\" × H 28.3\" (seat H 17.3\")",
+    "materials": "",
+    "finishes": "",
+    "notes": "Made in France"
   },
   {
     "category": "DINING TABLES",
     "tier": "",
-    "name": "Bottle Table · Barber & Osgerby for Cappellini",
+    "name": "Bottle Table",
     "url": "https://www.cappellini.com/ww/en/products/bottle.html",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness."
   },
   {
     "category": "DINING TABLES",
     "tier": "",
-    "name": "Saarinen High Tables · Eero Saarinen for Knoll",
+    "name": "Saarinen High Tables",
     "url": "https://www.knoll.com/product/saarinen-dining-table",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later."
   },
   {
     "category": "DINING TABLES",
     "tier": "",
-    "name": "Ralph Pucci One Dining Table · Ralph Pucci",
+    "name": "Ralph Pucci One Dining Table",
     "url": "https://ralphpucci.com/collection/view/one/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_eric-schmitt-M_Gateway.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_eric-schmitt-M_Gateway.jpg",
+    "dimensions": "47.5\" W x 14.5\" D x 15.75\" H",
+    "materials": "Silvered bronze & slate top",
+    "finishes": "",
+    "notes": "Edition of 12 Description: Silvered bronze & slate top Dimensions: 47.5\" W x 14.5\" D x 15.75\" H"
   },
   {
     "category": "DINING TABLES",
     "tier": "",
-    "name": "Parisal Table · Maxime Boutillier for Studio Twenty Seven",
+    "name": "Parisal Table",
     "url": "https://studiotwentyseven.com/furniture/parisal-table-by-maxime-boutillier/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Parisal-Table_Maxime-Boutillier.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/10/STUDIOTWENTYSEVEN_Parisal-Table_Maxime-Boutillier.webp",
+    "dimensions": "W 300 × D 120 × H 75 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 30 Signed, Serial Number And Certificate Of Authenticity Panier Collection Year 2025",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN FRANCE",
+    "notes": "His aesthetic vocabulary is defined by a relentless pursuit of essence, sobriety, and restraint. Yet Boutillier understands that theatricality and gesture can coexist with simplicity. In each creation, the study of proportion is paramount: every line and every curve is considered with precision, resulting in silhouettes that are both elegant and sensuous. His purity of form and meticulous craftsma"
   },
   {
     "category": "MIRRORS",
     "tier": "",
-    "name": "Miroir Rond 134 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Miroir Rond 134",
     "url": "https://ralphpucci.com/collection/view/miroir-rond-134/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_Herve-Van-Der-Straeten-Miroir-Rond-01-M.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Weimar Credenza · Chris Lehrecke for Ralph Pucci",
+    "name": "Weimar Credenza",
     "url": "https://ralphpucci.com/collection/view/weimar-credenza/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Credenza.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Credenza.jpg",
+    "dimensions": "73.5\" W x 21\" D x 60.5\" H",
+    "materials": "Fin form plywood",
+    "finishes": "",
+    "notes": "Description: Fin form plywood Dimensions: 73.5\" W x 21\" D x 60.5\" H"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Weimar Stool · Chris Lehrecke for Ralph Pucci",
+    "name": "Weimar Stool",
     "url": "https://ralphpucci.com/collection/view/weimar-stool/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Stool.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/03/medium_Chris-Lehrecke-M-Weimar-Stool.jpg",
+    "dimensions": "20\" W x 20\" D x 17\" H",
+    "materials": "Fin form plywood",
+    "finishes": "",
+    "notes": "Description: Fin form plywood Dimensions: 20″ W x 20″ D x 17″ H"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Tabouret Capsule 216 174 335 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Tabouret Capsule 216 174 335",
     "url": "https://ralphpucci.com/collection/view/tabouret-capsule/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_Hervevan_11.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_Hervevan_11.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": "23.23\" L x 23.23 W\" x 13.78 H\" Available in dark plum, Chinese red, firemen red, apple green, burnt orange or white lacquered aluminium"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Bruno Rotating Bookcase · India Mahdavi for Ralph Pucci",
+    "name": "Bruno Rotating Bookcase",
     "url": "https://ralphpucci.com/collection/view/bruno-rotating-bookcase/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/India_Mahdavi-Bruno-Rotating-Bookcase.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/India_Mahdavi-Bruno-Rotating-Bookcase.jpg",
+    "dimensions": "27.6\" W x 27.6\" D x 69\" H",
+    "materials": "Lacquered wood, laminate, steel",
+    "finishes": "",
+    "notes": "Description: Lacquered wood, laminate, steel Dimensions: 27.6\" W x 27.6\" D x 69\" H"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Pau Hana Lounge Chair · John Koga for Ralph Pucci",
+    "name": "Pau Hana Lounge Chair",
     "url": "https://ralphpucci.com/collection/view/pau-hana-work-is-over-lounge-chair/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/John_Koga-Pau-Hana-Lounge-Chair.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/John_Koga-Pau-Hana-Lounge-Chair.jpg",
+    "dimensions": "26.75\" W x 34.25\" D x 54\" H, SH: 13.5\"",
+    "materials": "Plasterglass",
+    "finishes": "",
+    "notes": "Edition of 99 Description: Plasterglass Dimensions: 26.75\" W x 34.25\" D x 54\" H, SH: 13.5\""
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Numino Lounge Chair · Kevin Walz for Ralph Pucci",
+    "name": "Numino Lounge Chair",
     "url": "https://ralphpucci.com/collection/view/numino/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Giverny Coffee Table Large · Lee F. Mindel for Ralph Pucci",
+    "name": "Giverny Coffee Table Large",
     "url": "https://ralphpucci.com/collection/view/giverny-coffee-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/Giverny-Coffee-Table-2.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/05/Giverny-Coffee-Table-2.jpg",
+    "dimensions": "36.25\" D x 17.75\" H",
+    "materials": "Plasterglass with green tinted glass",
+    "finishes": "",
+    "notes": "Description: Plasterglass with green tinted glass Dimensions: 36.25\" D x 17.75\" H Weight: 120 lbs"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Amalfi Blue Side Table · Patrick Naggar for Ralph Pucci",
+    "name": "Amalfi Blue Side Table",
     "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-side-table/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/06/medium_pn_furn_outdoor_M_1-1.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/06/medium_pn_furn_outdoor_M_1-1.jpg",
+    "dimensions": "24.5\" W x 14.75\" D x 16.25\" H",
+    "materials": "Plasterglass in Blue",
+    "finishes": "",
+    "notes": "Description: Plasterglass in Blue Dimensions: 24.5\" W x 14.75\" D x 16.25\" H Note: This product is meticulously made by master artisans. Any natural blemishes or irregularities should not be misconstrued as flaws. These are what make each piece unique."
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Amalfi Blue Chair · Patrick Naggar for Ralph Pucci",
+    "name": "Amalfi Blue Chair",
     "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-chair/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg",
+    "dimensions": "43.5\" W x 23\" D x 30\" H, 13.75\" SH",
+    "materials": "Plasterglass in Persian Orange",
+    "finishes": "",
+    "notes": "Description: Plasterglass in Persian Orange Dimensions: 43.5\" W x 23\" D x 30\" H, 13.75\" SH Weight: 50 lbs Note: This product is meticulously made by master artisans. Any natural blemishes or irregularities should not be misconstrued as flaws. These are what make each piece unique."
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Amalfi Luminous Pink Chair · Patrick Naggar for Ralph Pucci",
+    "name": "Amalfi Luminous Pink Chair",
     "url": "https://ralphpucci.com/collection/view/amalfi-outdoor-chair/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/05/Patrick-Naggar-Amalfi-Chair.jpg",
+    "dimensions": "43.5\" W x 23\" D x 30\" H, 13.75\" SH",
+    "materials": "Plasterglass in Persian Orange",
+    "finishes": "",
+    "notes": "Description: Plasterglass in Persian Orange Dimensions: 43.5\" W x 23\" D x 30\" H, 13.75\" SH Weight: 50 lbs Note: This product is meticulously made by master artisans. Any natural blemishes or irregularities should not be misconstrued as flaws. These are what make each piece unique."
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Herman Mirror · Elizabeth Garouste for Ralph Pucci",
+    "name": "Herman Mirror",
     "url": "https://ralphpucci.com/collection/view/herman-mirror/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/Elizabeth-Garouste-Herman-Mirror.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/07/Elizabeth-Garouste-Herman-Mirror.jpg",
+    "dimensions": "30.5\" W x 3.75\" D x 50.5\" H",
+    "materials": "Carbon (Black) and Land of Sun (Red) Plasterglass with Mirror",
+    "finishes": "",
+    "notes": "Description: Carbon (Black) and Land of Sun (Red) Plasterglass with Mirror Also Available in (Beige) and Fresh (Lighter Green) Dimensions: 30.5\" W x 3.75\" D x 50.5\" H Weight: 65 lbs"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Sideboard · Finn Juhl 1955 for Studio Twenty Seven",
+    "name": "Sideboard",
     "url": "https://studiotwentyseven.com/furniture/sideboard-by-finn-juhl-1955/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2017/02/STUDIOTWENTYSEVEN_Sideboard_BlueWhite_Finn-Juhl-1955.jpg",
+    "dimensions": "W 69.5\" × D 18.4\" × H 35.2\"",
+    "materials": "Design 1955 Certificate Of Authenticity Sideboard With Or Without Inside Tray Unit Frame In Oak, Walnut, Oregon Pine Or Teak Legs In Brownish Steel With Wooden Feet Doors In Oak, Walnut, Oregon Pine Or Teak Doors In Yellow/White Or Blue/White Tray Unit In Red/Yellow Or Blue/White",
+    "finishes": "",
+    "notes": "After initially pursuing a career as an art historian, Juhl trained as an architect at the Royal Danish Academy of Art. As an interior designer, he created celebrated commissions for the United Nations, Scandinavian Airlines, and Georg Jensen. He also curated over sixty design exhibitions around the world, including exhibits at the Metropolitan Museum of Art and the Victoria & Albert Museum"
   },
   {
     "category": "RAIKES ROOM",
     "tier": "",
-    "name": "Pill Desk · Roman Andrusenko for Studio Twenty Seven",
+    "name": "Pill Desk",
     "url": "https://studiotwentyseven.com/furniture/pill-desk-by-roman-andrusenko/",
-    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/09/STUDIOTWENTYSEVEN_Pill-Desk_Roman-Andrusenko.webp"
+    "image_url": "https://studiotwentyseven.com/wp-content/uploads/2025/09/STUDIOTWENTYSEVEN_Pill-Desk_Roman-Andrusenko.webp",
+    "dimensions": "W 160 × D 65 × H 75 cm",
+    "materials": "Exclusively For Studiotwentyseven Limited Edition 12 Signed, Serial Number And Certificate Of Authenticity Materia Viva Collection Year 2023",
+    "finishes": "CUSTOM SIZE OR FINISH ON REQUEST HANDCRAFTED IN ITALY",
+    "notes": "With unexpected combinations of forms and references—from primitive art to brutalism to personal whimsy—Andrusenko invites us to look at objects and life with a sense of irony, reminding us that elegance and irreverence go hand-in-hand. In his exploration of novel shapes, surprising meanings, and unconventional mediums, Andrusenko remains committed to handcrafted excellence, natural materials, and"
   },
   {
     "category": "LIGHTS",
     "tier": "",
-    "name": "Lustre Arthur 680 · Hervé Van der Straeten for Ralph Pucci",
+    "name": "Lustre Arthur 680",
     "url": "https://ralphpucci.com/collection/view/lustre-arthur-680/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "LIGHTS",
     "tier": "",
-    "name": "Geometric Sconce · Patrick Naggar for Ralph Pucci",
+    "name": "Geometric Sconce",
     "url": "https://ralphpucci.com/collection/view/geometric-sconce/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/12/Patrick_Naggar-Geometric-Sconce.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2022/12/Patrick_Naggar-Geometric-Sconce.jpg",
+    "dimensions": "5\" W x 9\" D x 8.5\" H",
+    "materials": "Plasterglass",
+    "finishes": "White, Red Clay, Black, Grey",
+    "notes": "Description: Plasterglass Finishes: White, Red Clay, Black, Grey Dimensions: 5\" W x 9\" D x 8.5\" H Lighting: 2 G9 60W Equivalent Bulb Weight: 5 lbs"
   },
   {
     "category": "SWINGS",
     "tier": "",
-    "name": "Swing · Elizabeth Garouste for Ralph Pucci",
+    "name": "Swing",
     "url": "https://ralphpucci.com/collection/view/swing/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/06/Elizabeth-Garouste-Swing-1.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2023/06/Elizabeth-Garouste-Swing-1.jpg",
+    "dimensions": "30\" W x 26\" D; minimum drop 90\" H",
+    "materials": "Wrought iron chain",
+    "finishes": "",
+    "notes": "Edition of 25 Description: Wrought iron chain Dimensions: 30\" W x 26\" D; minimum drop 90\" H"
   },
   {
     "category": "SWINGS",
     "tier": "",
-    "name": "Hammock · Jim Zivic for Ralph Pucci",
+    "name": "Hammock",
     "url": "https://ralphpucci.com/collection/view/hammock/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_jz_furn2013HamM.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/06/medium_jz_furn2013HamM.jpg",
+    "dimensions": "3 ft (88.5\" L x 36\" W)",
+    "materials": "Stainless steel frame with leather link sling, stainless steel mesh and felt head/foot boards. Jewel-chain suspension. Designed for indoor use. Standard with suede cushion, (2) shearling/suede pillows",
+    "finishes": "",
+    "notes": "Description: Stainless steel frame with leather link sling, stainless steel mesh and felt head/foot boards. Jewel-chain suspension. Designed for indoor use. Standard with suede cushion, (2) shearling/suede pillows and throw. Dimensions: 3 ft (88.5\" L x 36\" W) Also Available in 4 ft (88.5\" L x 48\" W)"
   },
   {
     "category": "SWINGS",
     "tier": "",
-    "name": "Nautical Tech Outdoor Hammock · Jim Zivic for Ralph Pucci",
+    "name": "Nautical Tech Outdoor Hammock",
     "url": "https://ralphpucci.com/collection/view/nautical-tech-hammock/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2024/08/Page-Not-Found.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2020/04/medium_jz_furn_outdoor_2M.jpg",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "OUTDOOR",
     "tier": "",
-    "name": "Round Ottoman Blackened Steel 48in · Fran Taubman for Ralph Pucci",
+    "name": "Round Ottoman Blackened Steel 48in",
     "url": "https://ralphpucci.com/collection/view/round-ottoman/",
-    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/02/346A6713.jpg"
+    "image_url": "https://ralphpucci.com/wp-content/uploads/2025/02/346A6713.jpg",
+    "dimensions": "32.5\" Dia x 14\" H",
+    "materials": "Wood and upholstery",
+    "finishes": "",
+    "notes": "Description: Wood and upholstery Dimensions: 32.5\" Dia x 14\" H COM: 2.5 Yards Weight: 25 lbs"
   },
   {
     "category": "OUTDOOR DINING TABLES",
     "tier": "",
-    "name": "Michelangelo Dining Table · Exteta",
+    "name": "Michelangelo Dining Table",
     "url": "https://www.exteta.it/en/products/michelangelo/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   },
   {
     "category": "OUTDOOR DINING TABLES",
     "tier": "",
-    "name": "Giotto Table · Exteta",
+    "name": "Giotto Table",
     "url": "https://www.exteta.it/en/products/giotto/",
-    "image_url": ""
+    "image_url": "",
+    "dimensions": "",
+    "materials": "",
+    "finishes": "",
+    "notes": ""
   }
 ]

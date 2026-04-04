@@ -1022,6 +1022,10 @@ function renderProductCard(product) {
 
   spec.appendChild(makeSpecRow('Category', product.category || ''));
   if (product.tier) spec.appendChild(makeSpecRow('Tier', product.tier));
+  if (product.dimensions) spec.appendChild(makeSpecRow('Dimensions', product.dimensions));
+  if (product.materials) spec.appendChild(makeSpecRow('Materials', product.materials));
+  if (product.finishes) spec.appendChild(makeSpecRow('Finishes', product.finishes));
+  if (product.notes) spec.appendChild(makeSpecRow('Notes', product.notes));
 
   if (product.url) {
     const row = document.createElement('div');
