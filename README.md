@@ -67,7 +67,7 @@ The file must be a JSON array where each object is one product. Only `category`,
 ### Tips
 
 - **Image URLs** — use direct image addresses, not product page URLs. Right-click a product image and choose "Copy image address".
-- **Images in exports** — before exporting, the app fetches each selected image as a data URL so html2canvas can read it without CORS restrictions. This works automatically for most CDN-hosted images. If a product website blocks cross-origin requests (you'll see blank squares in the export), paste a CORS proxy prefix into the **Image proxy** field in the sidebar — e.g. `https://corsproxy.io/?` — and the app will route image fetches through it. Images that still can't be fetched will fall back to a placeholder.
+- **Images in exports** — before exporting, the app fetches each selected image as a data URL so html2canvas can read it without CORS restrictions. This works automatically for most CDN-hosted images (Shopify, Cloudinary, etc.). If a product website blocks cross-origin requests entirely (common on sites behind Sucuri or Cloudflare WAF), its image will be blank in the export. The fix is to replace the `image_url` with a version hosted on a CORS-friendly service such as Cloudinary or imgbb.
 - **Category names** — keep them consistent across products; they drive the section headings and filters.
 - **Order** — products appear in the order listed in the file, within each category.
 - **Export selection** — use **Select visible** to quickly select everything currently shown (respects active category and tier filters), or **Clear all** to start fresh. Products are de-selected by default when a file is loaded.
