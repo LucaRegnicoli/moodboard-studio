@@ -634,7 +634,7 @@
 </div>
 
 <div id="export-overlay" style="display:none">
-  <div class="export-spinner">Generating export…</div>
+  <div class="export-spinner" id="export-spinner-text">Generating export…</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -1230,6 +1230,49 @@ function html2canvasOpts(bg, extra) {
   }, extra);
 }
 
+// Pre-fetch selected card images and swap to data URLs so html2canvas can
+// read them without CORS issues. Images whose servers don't support CORS
+// are silently skipped and left as-is.
+async function preloadImagesForExport(cards) {
+  setOverlayText('Preparing images\u2026');
+  await Promise.all(Array.from(cards).map(async card => {
+    const img = card.querySelector('img');
+    if (!img || !img.src || img.src.startsWith('data:')) return;
+    try {
+      const resp = await fetch(img.src, { mode: 'cors' });
+      if (!resp.ok) return;
+      const blob = await resp.blob();
+      const dataURL = await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+      img.dataset.exportSrc = img.src;
+      img.src = dataURL;
+      await img.decode().catch(() => {});
+    } catch {
+      // Server doesn't support CORS — leave src unchanged
+    }
+  }));
+  setOverlayText('Generating export\u2026');
+}
+
+function restoreImagesAfterExport(cards) {
+  Array.from(cards).forEach(card => {
+    const img = card.querySelector('img');
+    if (img && img.dataset.exportSrc) {
+      img.src = img.dataset.exportSrc;
+      delete img.dataset.exportSrc;
+    }
+  });
+}
+
+function setOverlayText(text) {
+  const el = document.getElementById('export-spinner-text');
+  if (el) el.textContent = text;
+}
+
 function html2canvasWithTimeout(el, opts) {
   const capture = html2canvas(el, opts);
   const timeout = new Promise((_, reject) =>
@@ -1247,6 +1290,8 @@ async function exportPNG() {
   setExportEnabled(false);
   const { hiddenCards, hiddenSections } = applyExportFilter();
   document.body.classList.add('exporting');
+  const selectedCards = document.querySelectorAll('#board .product-card.export-selected');
+  await preloadImagesForExport(selectedCards);
   try {
     const board = document.getElementById('board');
     const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
@@ -1260,6 +1305,7 @@ async function exportPNG() {
     alert(EXPORT_ERR_MSG);
   } finally {
     document.body.classList.remove('exporting');
+    restoreImagesAfterExport(selectedCards);
     restoreExportFilter(hiddenCards, hiddenSections);
     showOverlay(false);
     setExportEnabled(true);
@@ -1275,6 +1321,8 @@ async function exportPDF() {
   setExportEnabled(false);
   const { hiddenCards, hiddenSections } = applyExportFilter();
   document.body.classList.add('exporting');
+  const selectedCards = document.querySelectorAll('#board .product-card.export-selected');
+  await preloadImagesForExport(selectedCards);
   try {
     const board  = document.getElementById('board');
     const boardW = board.offsetWidth;
@@ -1313,6 +1361,7 @@ async function exportPDF() {
     alert(EXPORT_ERR_MSG);
   } finally {
     document.body.classList.remove('exporting');
+    restoreImagesAfterExport(selectedCards);
     restoreExportFilter(hiddenCards, hiddenSections);
     showOverlay(false);
     setExportEnabled(true);

@@ -67,7 +67,7 @@ The file must be a JSON array where each object is one product. Only `category`,
 ### Tips
 
 - **Image URLs** — use direct image addresses, not product page URLs. Right-click a product image and choose "Copy image address".
-- **Images in exports** — some product websites block their images from being copied to other pages. Those images will appear in the app but may be blank in the exported PDF or PNG. If that happens, try downloading the image and hosting it yourself, or leave the field empty to show a placeholder.
+- **Images in exports** — before exporting, the app tries to fetch each selected image with a CORS request and convert it to a data URL so html2canvas can read it cleanly. This fixes most CDN-hosted images (Shopify, Cloudinary, etc.). If a product website actively blocks cross-origin requests, its image will still be blank in the export — in that case, download the image, host it somewhere that allows CORS (e.g. your own server or an image CDN), and update the `image_url` in your JSON.
 - **Category names** — keep them consistent across products; they drive the section headings and filters.
 - **Order** — products appear in the order listed in the file, within each category.
 - **Export selection** — use **Select visible** to quickly select everything currently shown (respects active category and tier filters), or **Clear all** to start fresh. Products are de-selected by default when a file is loaded.
