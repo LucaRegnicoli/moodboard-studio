@@ -526,6 +526,8 @@
         <input type="file" id="header-img-input" accept="image/*" style="display:none">
         <button id="btn-clear-header" class="btn btn-sm" style="display:none">Remove</button>
       </div>
+      <span class="sidebar-label" style="display:block;margin-top:10px">Image proxy <span style="opacity:0.5;font-size:8px;letter-spacing:0">(optional, for export)</span></span>
+      <input type="text" id="input-cors-proxy" class="sidebar-input" placeholder="https://corsproxy.io/?" style="font-size:10px;margin-bottom:0">
     </section>
 
     <hr class="sidebar-rule">
@@ -657,7 +659,8 @@ const state = {
   fonts: 'classic',
   visibleCategories: new Set(),
   visibleTiers: new Set(),
-  exportSelection: new Set()
+  exportSelection: new Set(),
+  corsProxy: ''
 };
 
 // ============================================================
@@ -704,6 +707,10 @@ function init() {
   bindLayoutControls();
   bindThemeControls();
   bindFontControls();
+
+  document.getElementById('input-cors-proxy').addEventListener('input', e => {
+    state.corsProxy = e.target.value.trim();
+  });
 
   document.getElementById('btn-export-png').addEventListener('click', exportPNG);
   document.getElementById('btn-export-pdf').addEventListener('click', exportPDF);
@@ -1239,7 +1246,8 @@ async function preloadImagesForExport(cards) {
     const img = card.querySelector('img');
     if (!img || !img.src || img.src.startsWith('data:')) return;
     try {
-      const resp = await fetch(img.src, { mode: 'cors' });
+      const fetchUrl = state.corsProxy ? state.corsProxy + img.src : img.src;
+      const resp = await fetch(fetchUrl, { mode: 'cors' });
       if (!resp.ok) return;
       const blob = await resp.blob();
       const dataURL = await new Promise((resolve, reject) => {
