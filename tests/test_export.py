@@ -11,6 +11,9 @@ from conftest import upload_fixture, wait_for_export
 @pytest.fixture(autouse=True)
 def loaded(page):
     upload_fixture(page, "minimal.json")
+    # Export now requires at least one product selected — select all visible.
+    page.locator("#btn-sel-visible").click()
+    page.wait_for_timeout(100)
 
 
 # ---------------------------------------------------------------------------

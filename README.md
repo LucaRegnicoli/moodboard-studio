@@ -12,7 +12,8 @@ Create print-ready furniture moodboards from a simple spreadsheet export. Upload
 2. Drag it onto the upload zone — the board populates instantly
 3. Customise the title, client name, layout, colours, and fonts from the sidebar
 4. Filter by category or tier to show only what you need
-5. Export as **PDF** (A4, multi-page) or **PNG**
+5. **Click product cards** to select which ones to include in the export — a ✓ badge marks each selected card
+6. Export as **PDF** (A4, multi-page) or **PNG** — only the selected products are included
 
 Your data never leaves your browser.
 
@@ -69,6 +70,7 @@ The file must be a JSON array where each object is one product. Only `category`,
 - **Images in exports** — some product websites block their images from being copied to other pages. Those images will appear in the app but may be blank in the exported PDF or PNG. If that happens, try downloading the image and hosting it yourself, or leave the field empty to show a placeholder.
 - **Category names** — keep them consistent across products; they drive the section headings and filters.
 - **Order** — products appear in the order listed in the file, within each category.
+- **Export selection** — use **Select visible** to quickly select everything currently shown (respects active category and tier filters), or **Clear all** to start fresh. Products are de-selected by default when a file is loaded.
 
 ---
 

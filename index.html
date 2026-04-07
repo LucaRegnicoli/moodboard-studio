@@ -203,6 +203,28 @@
     }
     .filter-toggle-all:hover { opacity: 1; }
 
+    /* === EXPORT SELECTION === */
+    .product-card { cursor: pointer; }
+    .export-sel-badge {
+      position: absolute;
+      top: 8px; right: 8px;
+      width: 18px; height: 18px;
+      background: var(--ink);
+      color: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; line-height: 1;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.12s;
+    }
+    .product-card.export-selected { box-shadow: inset 0 0 0 3px var(--ink); }
+    .product-card.export-selected .export-sel-badge { opacity: 1; }
+    body.exporting .export-sel-badge { display: none; }
+    body.exporting .product-card.export-selected { box-shadow: none; }
+    .export-sel-count { font-size: 11px; color: var(--ink); margin-bottom: 8px; line-height: 1.5; }
+    .export-sel-actions { display: flex; gap: 6px; }
+
     /* === CANVAS AREA === */
     #canvas-area { flex: 1; overflow-y: auto; padding: 40px; background: #edeae2; }
 
@@ -634,6 +656,17 @@
       <div id="filter-tiers"></div>
     </section>
 
+    <hr class="sidebar-rule" id="rule-export-selection" style="display:none">
+
+    <section class="sidebar-section" id="section-export-selection" style="display:none">
+      <span class="sidebar-label">Export selection</span>
+      <div id="export-sel-count" class="export-sel-count">No products selected — click cards to select</div>
+      <div class="export-sel-actions">
+        <button id="btn-sel-visible" class="btn btn-sm">Select visible</button>
+        <button id="btn-sel-clear" class="btn btn-sm">Clear all</button>
+      </div>
+    </section>
+
   </aside>
 
   <main id="canvas-area">
@@ -664,7 +697,8 @@ const state = {
   theme: 'noir',
   fonts: 'classic',
   visibleCategories: new Set(),
-  visibleTiers: new Set()
+  visibleTiers: new Set(),
+  exportSelection: new Set()
 };
 
 // ============================================================
@@ -715,6 +749,17 @@ function init() {
   document.getElementById('btn-export-png').addEventListener('click', exportPNG);
   document.getElementById('btn-export-pdf').addEventListener('click', exportPDF);
 
+  document.getElementById('btn-sel-visible').addEventListener('click', () => {
+    getFilteredProducts().forEach(p => state.exportSelection.add(p));
+    renderBoard();
+    updateExportSelCount();
+  });
+  document.getElementById('btn-sel-clear').addEventListener('click', () => {
+    state.exportSelection.clear();
+    renderBoard();
+    updateExportSelCount();
+  });
+
   renderBoard();
 }
 
@@ -744,6 +789,7 @@ function parseProducts(jsonText) {
   state.products = data;
   state.visibleCategories = new Set(getUnique(data, 'category'));
   state.visibleTiers = new Set(getUnique(data, 'tier'));
+  state.exportSelection = new Set();
 }
 
 function handleHeaderImageUpload(file) {
@@ -860,6 +906,9 @@ function populateFilters() {
   const categories = getUnique(state.products, 'category');
   const tiers = getUnique(state.products, 'tier');
   document.getElementById('section-filters').style.display = '';
+  document.getElementById('rule-export-selection').style.display = '';
+  document.getElementById('section-export-selection').style.display = '';
+  updateExportSelCount();
 
   makeFilterGroup(
     document.getElementById('filter-categories'),
@@ -1050,11 +1099,23 @@ function renderCategorySection(categoryName, products) {
 
 function renderProductCard(product) {
   const card = document.createElement('div');
-  card.className = 'product-card';
+  card.className = 'product-card' + (state.exportSelection.has(product) ? ' export-selected' : '');
+  card.addEventListener('click', e => {
+    if (e.target.closest('a')) return; // don't intercept link clicks
+    if (state.exportSelection.has(product)) {
+      state.exportSelection.delete(product);
+      card.classList.remove('export-selected');
+    } else {
+      state.exportSelection.add(product);
+      card.classList.add('export-selected');
+    }
+    updateExportSelCount();
+  });
 
   // Image
   const imgWrap = document.createElement('div');
   imgWrap.className = 'card-image-wrap';
+
   const img = document.createElement('img');
   img.crossOrigin = 'anonymous'; // must precede src; needed for canvas export
   img.alt = String(product.name || '');
@@ -1072,6 +1133,13 @@ function renderProductCard(product) {
   };
   img.src = String(product.image_url || '');
   imgWrap.appendChild(img);
+
+  // Badge appended after img so it renders on top (both are position:absolute)
+  const badge = document.createElement('div');
+  badge.className = 'export-sel-badge';
+  badge.textContent = '\u2713';
+  imgWrap.appendChild(badge);
+
   card.appendChild(imgWrap);
 
   // Title block — split "Name · Designer" if present
@@ -1202,6 +1270,15 @@ function setExportEnabled(enabled) {
   document.getElementById('btn-export-pdf').disabled = !enabled;
 }
 
+function updateExportSelCount() {
+  const el = document.getElementById('export-sel-count');
+  if (!el) return;
+  const n = state.exportSelection.size;
+  el.textContent = n === 0
+    ? 'No products selected \u2014 click cards to select'
+    : n + ' product' + (n === 1 ? '' : 's') + ' selected for export';
+}
+
 function showOverlay(show) {
   document.getElementById('export-overlay').style.display = show ? '' : 'none';
 }
@@ -1237,8 +1314,14 @@ function html2canvasWithTimeout(el, opts) {
 }
 
 async function exportPNG() {
+  if (state.exportSelection.size === 0) {
+    alert('No products selected.\nClick product cards on the board to select them for export.');
+    return;
+  }
   showOverlay(true);
   setExportEnabled(false);
+  const { hiddenCards, hiddenSections } = applyExportFilter();
+  document.body.classList.add('exporting');
   try {
     const board = document.getElementById('board');
     const scale = Math.max(1, Math.min(EXPORT_SCALE, Math.floor(MAX_CANVAS_DIM / board.scrollHeight)));
@@ -1251,14 +1334,22 @@ async function exportPNG() {
     console.error('PNG export failed:', err);
     alert(EXPORT_ERR_MSG);
   } finally {
+    document.body.classList.remove('exporting');
+    restoreExportFilter(hiddenCards, hiddenSections);
     showOverlay(false);
     setExportEnabled(true);
   }
 }
 
 async function exportPDF() {
+  if (state.exportSelection.size === 0) {
+    alert('No products selected.\nClick product cards on the board to select them for export.');
+    return;
+  }
   showOverlay(true);
   setExportEnabled(false);
+  const { hiddenCards, hiddenSections } = applyExportFilter();
+  document.body.classList.add('exporting');
   try {
     const board  = document.getElementById('board');
     const boardW = board.offsetWidth;
@@ -1296,9 +1387,35 @@ async function exportPDF() {
     console.error('PDF export failed:', err);
     alert(EXPORT_ERR_MSG);
   } finally {
+    document.body.classList.remove('exporting');
+    restoreExportFilter(hiddenCards, hiddenSections);
     showOverlay(false);
     setExportEnabled(true);
   }
+}
+
+function applyExportFilter() {
+  const hiddenCards = [];
+  const hiddenSections = [];
+  document.querySelectorAll('#board .product-card').forEach(card => {
+    if (!card.classList.contains('export-selected')) {
+      card.style.display = 'none';
+      hiddenCards.push(card);
+    }
+  });
+  document.querySelectorAll('#board .category-section').forEach(section => {
+    const hasVisible = section.querySelector('.product-card:not([style*="display: none"])');
+    if (!hasVisible) {
+      section.style.display = 'none';
+      hiddenSections.push(section);
+    }
+  });
+  return { hiddenCards, hiddenSections };
+}
+
+function restoreExportFilter(hiddenCards, hiddenSections) {
+  hiddenCards.forEach(card => { card.style.display = ''; });
+  hiddenSections.forEach(section => { section.style.display = ''; });
 }
 
 // ============================================================
