@@ -294,48 +294,7 @@
     }
 
     /* === TABLE OF CONTENTS === */
-    .board-toc {
-      padding: 48px 64px 56px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .toc-heading {
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: normal;
-      color: var(--ink);
-      margin-bottom: 28px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .toc-table { width: 100%; border-collapse: collapse; }
-    .toc-table th {
-      font-family: var(--sans);
-      font-size: 9px;
-      font-weight: normal;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      padding: 0 0 8px;
-      border-bottom: 1px solid var(--rule);
-      text-align: left;
-    }
-    .toc-table th:last-child { text-align: right; }
-    .toc-row td {
-      font-family: var(--serif);
-      font-size: 15px;
-      color: var(--ink);
-      padding: 10px 0;
-      border-bottom: 1px solid var(--rule);
-      letter-spacing: 0.02em;
-    }
-    .toc-row:last-child td { border-bottom: none; }
-    .toc-count {
-      font-family: var(--sans) !important;
-      font-size: 11px !important;
-      color: var(--accent) !important;
-      text-align: right;
-      letter-spacing: 0.08em;
-    }
+
 
     /* === BOARD BODY === */
     .board-body { padding: 0 64px; }
@@ -957,8 +916,6 @@ function renderBoard() {
   }
 
   board.appendChild(renderCover());
-  board.appendChild(renderTOC());
-
   const filtered = getFilteredProducts();
   const grouped = groupByCategory(filtered);
 
@@ -1033,38 +990,6 @@ function renderCover() {
 
   cover.appendChild(inner);
   return cover;
-}
-
-function renderTOC() {
-  const filtered = getFilteredProducts();
-  const grouped = groupByCategory(filtered);
-
-  const toc = document.createElement('div');
-  toc.className = 'board-toc';
-
-  const heading = document.createElement('h2');
-  heading.className = 'toc-heading';
-  heading.textContent = 'Contents';
-  toc.appendChild(heading);
-
-  const table = document.createElement('table');
-  table.className = 'toc-table';
-  const thead = document.createElement('thead');
-  thead.innerHTML = '<tr><th>Category</th><th>Items</th></tr>';
-  table.appendChild(thead);
-
-  const tbody = document.createElement('tbody');
-  grouped.forEach((products, category) => {
-    const tr = document.createElement('tr');
-    tr.className = 'toc-row';
-    const tdCat = document.createElement('td'); tdCat.textContent = category;
-    const tdCount = document.createElement('td'); tdCount.className = 'toc-count'; tdCount.textContent = products.length;
-    tr.appendChild(tdCat); tr.appendChild(tdCount);
-    tbody.appendChild(tr);
-  });
-  table.appendChild(tbody);
-  toc.appendChild(table);
-  return toc;
 }
 
 function renderCategorySection(categoryName, products) {

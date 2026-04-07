@@ -1,5 +1,5 @@
 """
-Tests for board rendering: cover, TOC, category sections, product cards.
+Tests for board rendering: cover, category sections, product cards.
 """
 import pytest
 from playwright.sync_api import Page
@@ -40,29 +40,6 @@ class TestCover:
         meta = page.locator(".cover-meta").inner_text()
         # Date is always shown; just verify something is there
         assert len(meta.strip()) > 0
-
-
-class TestTableOfContents:
-    """The TOC lists every category with its item count."""
-
-    def test_toc_heading_text(self, page: Page):
-        assert page.locator(".toc-heading").inner_text() == "Contents"
-
-    def test_toc_has_all_categories(self, page: Page):
-        rows = page.locator(".toc-row")
-        # minimal.json has 2 categories
-        assert rows.count() == 2
-
-    def test_toc_category_names(self, page: Page):
-        text = page.locator(".toc-table").inner_text().upper()
-        assert "SOFAS" in text
-        assert "TABLES" in text
-
-    def test_toc_shows_correct_counts(self, page: Page):
-        rows = page.locator(".toc-row").all()
-        counts = [r.locator(".toc-count").inner_text() for r in rows]
-        # Sofas=2, Tables=1 (or any order — just check the values present)
-        assert set(counts) == {"2", "1"}
 
 
 class TestCategorySection:

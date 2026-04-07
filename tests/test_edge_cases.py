@@ -133,15 +133,6 @@ class TestFilterEdgeCases:
         assert page.locator(".product-card").count() == 2
         assert page.locator(".category-section").count() == 1
 
-    def test_toc_updates_when_category_unchecked(self, page: Page):
-        upload_fixture(page, "multi_category.json")
-        sofas_cb = page.locator("#filter-categories label").filter(has_text="Sofas").locator("input")
-        sofas_cb.uncheck()
-        page.wait_for_timeout(200)
-        toc_text = page.locator(".toc-table").inner_text()
-        assert "Sofas" not in toc_text
-
-
 class TestMultipleUploads:
     """Uploading multiple files in sequence resets all state cleanly."""
 
